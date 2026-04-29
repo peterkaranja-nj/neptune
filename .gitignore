@@ -1,0 +1,87 @@
+# Laravel
+/vendor
+/node_modules
+.env
+.env.backup
+.env.production
+.env.local
+/public/hot
+/public/storage
+/public/_MACOSX
+public/_MACOSX
+/tests
+/storage/*.key
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+
+# WordPress - 
+/wordpress
+wordpress/
+
+# Config folder - 
+/config
+config/
+
+# Large files 
+*.zip
+*.tar
+*.tar.gz
+*.rar
+.well-known.zip
+/.well-known.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+/.phpunit.cache
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.env.production
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+
+# IDE folders
+/.fleet
+/.idea
+/.vscode
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Extra folders found in this project
+/wordpress
+/__MACOSX
+/.wp-cli
+/.well-known.zip
+/work-dir
+/acme-challenge
+/pki-validation
+/build
+/css
+/js
+/fonts
+/corporate

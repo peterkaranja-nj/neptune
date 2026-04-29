@@ -1,0 +1,218 @@
+<x-app-layout>
+    
+<head>
+    <title>@yield('meta_title', 'About Neptune Corporate Expert Business Services')</title>
+    <meta name="description" content="@yield('meta_description', 'Discover Neptune Corporate: learn about our mission, and dedicated expert team providing trusted company formation and corporate support worldwide.')">
+    <link rel="canonical" href="@yield('canonical', url()->current())">
+</head>
+
+  <main>
+    <div class="">
+      <div class="bg-image relative isolate px-6 lg:px-8">
+        <div class="py-20 sm:py-40 lg:py-28">
+          <div class="">
+            <h1 class="text-2xl font-bold text-center items-center tracking-tight text-white sm:text-5xl">
+              About Us
+            </h1>
+            <p class="font-bold text-center text-xs">Home <span class="font-bold"> > </span> <span class="text-yellow-600">About Us</span></p>
+          </div>
+        </div>
+        <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+        </div>
+      </div>
+    </div>
+    <div class="relative flex flex-col max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 px-8">
+      <div class="flex py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
+        <div class="text-left py-10">
+          <h2 class="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-4xl">
+            Who We Are
+          </h2>
+          <p class="max-w-md mx-auto mt-3 text-base text-gray-500 text-xs md:mt-5 md:max-w-3xl">
+            Our dedication continues far beyond the initial setup, guiding clients throughout the
+            entire business lifecycle. We offer detailed assistance through complex legal procedures,
+            safeguarding our clients' businesses from potential hazards. Furthermore, our unwavering
+            support in maintaining ongoing compliance with international regulations underscores
+            our commitment to long-term success. At Neptune Fiduciaries Group, clients are our top
+            priority. We aim to build deep, lasting relationships through transparent communication,
+            gaining a comprehensive understanding of our clients' needs. This approach not only
+            provides us with valuable insights but also allows us to offer a level of service
+            that is unmatched in the industry.
+          </p>
+
+          <p class="max-w-md mx-auto mt-3 text-base text-gray-500 md:mt-5 text-xs md:max-w-3xl">
+            Neptune Fiduciaries Group thrives within the fast-paced, ever-changing landscape of the
+            global market. We specialize in delivering personalized incorporation services that
+            perfectly match the specific commercial goals of each client. Beyond establishing the
+            optimal company structure, our wide-ranging expertise covers every aspect of company
+            administration, ensuring meticulous attention to every operational detail and laying
+            a robust foundation for business success.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-center py-5 md:w-1/2">
+        <div class="w- p-3 rounded ">
+          <div class="rounded-lg bg-white text-black w-full">
+            <img src="images/about-6.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="bg-white">
+      <div class="container px-6  mx-auto">
+        <h2 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
+          Our Principles
+        </h2>
+        <p class="text-xs">
+          At Neptune Fiduciaries Group, our principles are the foundation of our identity, guiding all our actions.
+        </p>
+
+        <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
+          <div class="flex flex-col p-6 space-y-3 bg-gray-200 rounded-xl">
+            <h3 class="text-xl font-semibold text-yellow-600 capitalize">
+              Excellence & Empathy
+            </h3>
+            <p class="text-gray-500 text-xs">
+              Neptune Fiduciaries Group is built on the principles of excellence and empathy. We strive to provide top-tier services, always maintaining the highest standards of quality and care.
+            </p>
+          </div>
+
+          <div class="flex flex-col p-6 space-y-3 bg-gray-200 rounded-xl">
+            <h3 class="text-xl font-semibold text-yellow-600 capitalize">
+              Honesty & Clarity
+            </h3>
+            <p class="text-gray-500 text-xs">
+              We prioritize honesty and clarity at Neptune Fiduciaries Group. These values create an environment of trust and understanding, essential for fostering growth and success.
+            </p>
+          </div>
+
+          <div class="flex flex-col p-6 space-y-3 bg-gray-200 rounded-xl">
+            <h3 class="text-xl font-semibold text-yellow-600 capitalize">
+              Dedication & Teamwork
+            </h3>
+            <p class="text-gray-500 text-xs">
+              Our commitment to dedication and teamwork is pivotal to enhancing productivity and meeting our clients' expectations. This collaborative approach allows us to deliver services innovatively and effectively.
+            </p>
+          </div>
+
+          <div class="flex flex-col p-6 space-y-3 bg-gray-200 rounded-xl">
+            <h3 class="text-xl font-semibold text-yellow-600 capitalize">
+              Professionalism & Respect
+            </h3>
+            <p class="text-gray-500 text-xs">
+              We are committed to treating everyone with professionalism and deep respect. Our promise is to address concerns and communicate empathetically, fostering an inclusive and supportive environment.
+            </p>
+          </div>
+
+          <div class="flex flex-col p-6 space-y-3 bg-gray-200 rounded-xl">
+            <h3 class="text-xl font-semibold text-yellow-600 capitalize">
+              Enduring Relationships
+            </h3>
+            <p class="text-gray-500 text-xs">
+              We believe in building long-lasting relationships. Through trust, mutual respect, and open communication, we remain dedicated partners throughout our clients' journeys.
+            </p>
+          </div>
+
+          <div class="flex flex-col p-6 space-y-3 bg-gray-200 rounded-xl">
+            <h3 class="text-xl font-semibold text-yellow-600 capitalize">
+              International Outlook
+            </h3>
+            <p class="text-gray-500 text-xs">
+              The global market significantly influences our perspective. We address challenges and opportunities with a broad international outlook, ensuring our services remain relevant and effective in an ever-changing world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-white py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+          <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+            <dt class="text-base leading-7 text-gray-600 text-xs">
+              Projects completed
+            </dt>
+            <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl" id="transactions-counter">7,500 <span class="text-yellow-600 text-2xl">projects</span></dd>
+          </div>
+          <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+            <dt class="text-base leading-7 text-gray-600 text-xs">
+              Transactions every 24 hours
+            </dt>
+            <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl" id="assets-counter">$200,000 <span class="text-yellow-600 text-2xl">million</span></dd>
+          </div>
+          <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+            <dt class="text-base leading-7 text-gray-600 text-xs">
+              Happy customers
+            </dt>
+            <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl" id="members-counter">9,000 <span class="text-yellow-600 text-2xl">users</span></dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <a href="https://wa.me/254721441544" target="_blank" class="fixed bottom-4 right-32">
+      <button class="bg-green-500 text-white px-2 py-1 rounded-full hover:bg-green-600 flex items-center w-14 h-14 justify-center">
+        <i class="bx bxl-whatsapp text-3xl"></i>
+      </button>
+    </a>
+
+
+  </main>
+
+</x-app-layout>
+<style scoped>
+  .bg-image {
+    background-image: url("images/hero-3.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  body, p, span, div, dt {
+    font-size: 15px !important;
+    line-height: 1.6 !important; /* or use 18px if you prefer fixed values */
+  }
+  
+
+  @media (max-width: 767px) {
+    .section-with-bg-image {
+      background-size: auto;
+    }
+    
+   
+    
+  }
+</style>
+<script>
+  // Counter function for transactions every 24 hours
+  function countTransactions() {
+    let currentCount = 0;
+    const targetCount = 44; // Target count for transactions
+    const increment = 1; // Increment amount for each step
+    const speed = 150; // Speed of counting in milliseconds
+
+    const counterElement = document.getElementById('transactions-counter');
+
+    const timer = setInterval(() => {
+      currentCount += increment;
+      counterElement.textContent = currentCount + ' projects';
+      if (currentCount >= targetCount) {
+        clearInterval(timer);
+        counterElement.textContent = targetCount + ' projects';
+      }
+    }, speed);
+  }
+
+  // Counter function for assets under holding
+  function countAssets() {
+    let currentCount = 0;
+    const targetCount = 200000; // Target count for assets
+    const increment = 100; // Increment amount for each step
+    const speed = 100; // Speed of counting in milliseconds
+
+    const counterElement = document.getElementById('assets-counter');
+
+    const timer = setInterval(() => {
+      currentCount += increment;
+      counterElement.textContent = '$' + currentCount + ' ';
+      if (currentCount >= targetCount) {
+        clearInterval(timer);
+ %

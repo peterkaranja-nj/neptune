@@ -1,0 +1,36 @@
+<?php
+
+namespace App\Mail;
+
+use Illuminate\Bus\Queueable;
+use Illuminate\Mail\Mailable;
+use Illuminate\Queue\SerializesModels;
+
+class RequestFormMail extends Mailable
+{
+    use Queueable, SerializesModels;
+
+    public $formData;
+
+    /**
+     * Create a new message instance.
+     *
+     * @param  array  $formData
+     * @return void
+     */
+    public function __construct(array $formData)
+    {
+        $this->formData = $formData;
+    }
+
+    /**
+     * Build the message.
+     *
+     * @return $this
+     */
+    public function build()
+    {
+        return $this->subject('New Consultation Form Submission')
+                    ->view('emails.consultation-form', ['formData' => $this->formData]);
+    }
+}
