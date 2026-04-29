@@ -300,25 +300,53 @@
 </style>
 
 <script>
+    // FIX: Close ALL other dropdowns before opening a new one
+    const allMenus = ['corporateMenu', 'licensingMenu', 'servicesMenu'];
+
     function toggleMenu(menuId) {
-        var menu = document.getElementById(menuId);
-        menu.classList.toggle("hidden");
+        allMenus.forEach(function(id) {
+            if (id !== menuId) {
+                document.getElementById(id).classList.add('hidden');
+            }
+        });
+        document.getElementById(menuId).classList.toggle('hidden');
+    }
+
+    function hideMenu(menuId) {
+        document.getElementById(menuId).classList.add('hidden');
     }
 
     function toggleSubMenu(menuId) {
         var menu = document.getElementById(menuId);
-        var isExpanded = menu.getAttribute('aria-expanded') === 'true';
-        menu.style.display = isExpanded ? 'none' : 'block';
-        menu.setAttribute('aria-expanded', !isExpanded);
+        var isVisible = menu.style.display === 'block';
+        menu.style.display = isVisible ? 'none' : 'block';
     }
 
     function toggleHeader(mainMenu) {
-        var main = document.getElementById(mainMenu);
-        main.classList.toggle("hidden");
+        document.getElementById(mainMenu).classList.toggle('hidden');
     }
 
-    function hideMenu(menuId) {
-        var menu = document.getElementById(menuId);
-        menu.classList.add("hidden");
-    }
+    // FIX: Open on hover, close when mouse leaves
+    document.addEventListener('DOMContentLoaded', function () {
+        allMenus.forEach(function(menuId) {
+            var menu = document.getElementById(menuId);
+            if (!menu) return;
+            var parent = menu.closest('.relative');
+            if (!parent) return;
+
+            parent.addEventListener('mouseenter', function () {
+                // Close all others first
+                allMenus.forEach(function(id) {
+                    if (id !== menuId) {
+                        document.getElementById(id).classList.add('hidden');
+                    }
+                });
+                menu.classList.remove('hidden');
+            });
+
+            parent.addEventListener('mouseleave', function () {
+                menu.classList.add('hidden');
+            });
+        });
+    });
 </script>
