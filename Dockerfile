@@ -36,14 +36,10 @@ RUN echo '<VirtualHost *:80>\n\
 
 RUN a2enmod rewrite
 
-# Copy .env for production
-COPY .env.production .env
-
-RUN php artisan key:generate
-RUN php artisan config:cache
-RUN php artisan route:cache
-RUN php artisan view:cache
+# Create start script that runs artisan commands at runtime
+# (after env vars are injected by Render)
+RUN printf '#!/bin/bash\nphp artisan config:cache\nphp artisan route:cache\nphp artisan view:cache\napache2-foreground' > /start.sh && chmod +x /start.sh
 
 EXPOSE 80
 
-CMD ["apache2-foreground"]
+CMD ["/start.sh"]
