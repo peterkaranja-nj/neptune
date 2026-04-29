@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'What is a Trademark Registration? Simple Guide for Businesses')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn what is a trademark registration and how it protects your brand, logo, and business identity. Step-by-step guide for entrepreneurs.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'What is a Trademark Registration? Simple Guide for Businesses')"
+    metaDescription="@yield('meta_description', 'Learn what is a trademark registration and how it protects your brand, logo, and business identity. Step-by-step guide for entrepreneurs.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

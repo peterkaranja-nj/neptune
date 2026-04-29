@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Benefits of Offshore Banking: Secure and Grow Your Wealth')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover the benefits of offshore banking for secure wealth growth, asset protection, and global financial freedom with Neptunecorporate.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Benefits of Offshore Banking: Secure and Grow Your Wealth')"
+    metaDescription="@yield('meta_description', 'Discover the benefits of offshore banking for secure wealth growth, asset protection, and global financial freedom with Neptunecorporate.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

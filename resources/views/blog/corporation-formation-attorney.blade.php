@@ -1,11 +1,8 @@
-<x-app-layout>
-       
-<head>
-    <title>@yield('meta_title', 'Hire a Corporation Formation Attorney for Easy Business Setup')</title>
-    <meta name="description" content="@yield('meta_description', 'Get expert guidance from a corporation formation attorney. Start your business legally, avoid mistakes, and grow with confidence.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Hire a Corporation Formation Attorney for Easy Business Setup')"
+    metaDescription="@yield('meta_description', 'Get expert guidance from a corporation formation attorney. Start your business legally, avoid mistakes, and grow with confidence.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

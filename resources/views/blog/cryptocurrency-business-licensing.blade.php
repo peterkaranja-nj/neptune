@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>How Cryptocurrency Business Licensing Boosts Your Success</title>
-    <meta name="description" content="Learn how cryptocurrency business licensing works, its benefits, and how to get licensed to operate legally and grow your crypto business globally.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="How Cryptocurrency Business Licensing Boosts Your Success"
+    metaDescription="Learn how cryptocurrency business licensing works, its benefits, and how to get licensed to operate legally and grow your crypto business globally."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

@@ -1,11 +1,8 @@
-<x-app-layout>
-       
-<head>
-    <title>@yield('meta_title', 'Why Your Business Needs a Connecticut Registered Agent')</title>
-    <meta name="description" content="@yield('meta_description', 'Hire a trusted Connecticut registered agent to handle legal notices, ensure compliance, and protect your business\'s privacy today.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Why Your Business Needs a Connecticut Registered Agent')"
+    metaDescription="@yield('meta_description', 'Hire a trusted Connecticut registered agent to handle legal notices, ensure compliance, and protect your business\'s privacy today.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

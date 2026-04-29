@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Top Offshore Wealth Planning Strategies to Grow Your Assets')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover the best offshore wealth planning strategies to protect assets, optimize taxes, and grow your wealth globally with ease.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Top Offshore Wealth Planning Strategies to Grow Your Assets')"
+    metaDescription="@yield('meta_description', 'Discover the best offshore wealth planning strategies to protect assets, optimize taxes, and grow your wealth globally with ease.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

@@ -1,14 +1,9 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Contact Neptune Fiduciaries – Get in Touch Today')</title>
-    <meta name="description" content="@yield('meta_description', 'Reach Neptune Fiduciaries for inquiries, support, and expert global business services. Email or visit our offices worldwide.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-
-    <!-- baki css / js -->
-</head>
-
-    <div class="">
+<x-app-layout
+    title="@yield('meta_title', 'Contact Neptune Fiduciaries – Get in Touch Today')"
+    metaDescription="@yield('meta_description', 'Reach Neptune Fiduciaries for inquiries, support, and expert global business services. Email or visit our offices worldwide.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<div class="">
         <div class="bg-image relative isolate px-6 lg:px-8">
             <div class="py-10 sm:py-20 lg:py-28">
                 <div class="">

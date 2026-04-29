@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Which Investment Has the Least Liquidity? Guide')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover which investment has the least liquidity, why cashing out is difficult, and how it impacts your financial strategy and long-term planning.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Which Investment Has the Least Liquidity? Guide')"
+    metaDescription="@yield('meta_description', 'Discover which investment has the least liquidity, why cashing out is difficult, and how it impacts your financial strategy and long-term planning.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

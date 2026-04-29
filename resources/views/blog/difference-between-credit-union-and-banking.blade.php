@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Difference Between Credit Union and Banking Simplified')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn the key difference between credit union and banking, including fees, loans, services, and which option suits personal & business needs best.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Difference Between Credit Union and Banking Simplified')"
+    metaDescription="@yield('meta_description', 'Learn the key difference between credit union and banking, including fees, loans, services, and which option suits personal & business needs best.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

@@ -1,11 +1,8 @@
-<x-app-layout>
-       
-<head>
-    <title>@yield('meta_title', 'What Is an IBC? Meaning, Benefits & Uses Explained')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn what is an IBC, its benefits, uses, and how International Business Companies help global businesses grow securely.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'What Is an IBC? Meaning, Benefits & Uses Explained')"
+    metaDescription="@yield('meta_description', 'Learn what is an IBC, its benefits, uses, and how International Business Companies help global businesses grow securely.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

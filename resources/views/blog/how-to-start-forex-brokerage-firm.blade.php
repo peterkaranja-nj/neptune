@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>How to Start a Forex Brokerage Firm: Explained</title>
-    <meta name="description" content="Learn how to start a forex brokerage firm step-by-step, including licensing, setup, technology, compliance, and costs to build a successful brokerage">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="How to Start a Forex Brokerage Firm: Explained"
+    metaDescription="Learn how to start a forex brokerage firm step-by-step, including licensing, setup, technology, compliance, and costs to build a successful brokerage"
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

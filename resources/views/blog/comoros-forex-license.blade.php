@@ -1,17 +1,10 @@
-<x-app-layout>
+<x-app-layout
+    title="@yield('meta_title', 'Comoros Forex License: Benefits, Requirements & Process')"
+    metaDescription="@yield('meta_description', 'Get your Comoros Forex License easily. Learn requirements, benefits, and the step-by-step process to start your Forex brokerage in Comoros for success.')"
+    canonical="@yield('canonical', url()->current())"
+>
     <!-- component -->
-    
-     <head>
-    <title>@yield('meta_title', 'Comoros Forex License: Benefits, Requirements & Process')</title>
-    <meta name="description" content="@yield('meta_description', 'Get your Comoros Forex License easily. Learn requirements, benefits, and the step-by-step process to start your Forex brokerage in Comoros for success.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-
-
-    <!-- baki css / js -->
-</head>
-    
-    
-    <div class="max-w-screen-lg mx-auto">
+<div class="max-w-screen-lg mx-auto">
         <main class="mt-10">
 
             <div class="mb-4 md:mb-0 w-full mx-auto relative">

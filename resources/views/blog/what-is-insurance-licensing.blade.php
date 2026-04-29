@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'What is Insurance Licensing? Your Complete Guide')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn what is insurance licensing, its types, process, and benefits. Discover how to stay compliant and build a professional insurance business.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'What is Insurance Licensing? Your Complete Guide')"
+    metaDescription="@yield('meta_description', 'Learn what is insurance licensing, its types, process, and benefits. Discover how to stay compliant and build a professional insurance business.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

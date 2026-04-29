@@ -1,10 +1,9 @@
-<x-app-layout>
-<head>
-    <title>@yield('meta_title', 'LLC Formation Services Neptune Corporate Experts')</title>
-    <meta name="description" content="@yield('meta_description', 'Comprehensive limited liability company setup and management solutions, fully tailored to your business goals and specific jurisdiction requirements.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-  <main>
+<x-app-layout
+    title="@yield('meta_title', 'LLC Formation Services Neptune Corporate Experts')"
+    metaDescription="@yield('meta_description', 'Comprehensive limited liability company setup and management solutions, fully tailored to your business goals and specific jurisdiction requirements.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<main>
     <div class="">
       <div class="bg-image relative isolate px-6 lg:px-8">
         <div class="py-20 sm:py-40 lg:py-28">

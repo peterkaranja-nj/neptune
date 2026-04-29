@@ -1,15 +1,9 @@
-<x-app-layout>
-      <head>
-    <title>@yield('meta_title', 'Gaming License in Curacao: Requirements & Benefits')</title>
-    <meta name="description" content="@yield('meta_description', 'Get your Gaming License in Curacao easily. Learn requirements, benefits, and the process to start your iGaming business successfully.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-
-
-    <!-- baki css / js -->
-</head>
-    
-    
-    <!-- component -->
+<x-app-layout
+    title="@yield('meta_title', 'Gaming License in Curacao: Requirements & Benefits')"
+    metaDescription="@yield('meta_description', 'Get your Gaming License in Curacao easily. Learn requirements, benefits, and the process to start your iGaming business successfully.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<!-- component -->
     <div class="max-w-screen-lg mx-auto">
 
 

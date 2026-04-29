@@ -1,13 +1,9 @@
-<x-app-layout>
-    
-    <head>
-    <title>@yield('meta_title', 'Digital Asset Licensing Services: Neptune Fiduciaries')</title>
-    <meta name="description" content="@yield('meta_description', 'Explore Neptune Fiduciaries’ digital asset licensing services. Get compliant, secure and global support for crypto, blockchain and fintech operations.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-
-    <!-- baki css / js -->
-</head>
-    <main>
+<x-app-layout
+    title="@yield('meta_title', 'Digital Asset Licensing Services: Neptune Fiduciaries')"
+    metaDescription="@yield('meta_description', 'Explore Neptune Fiduciaries’ digital asset licensing services. Get compliant, secure and global support for crypto, blockchain and fintech operations.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<main>
         <div class="">
             <div class="bg-image relative isolate px-6 lg:px-8">
                 <div class="py-20 sm:py-40 lg:py-28">

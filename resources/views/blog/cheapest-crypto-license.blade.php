@@ -1,15 +1,9 @@
-<x-app-layout>
-    <head>
-    <title>@yield('meta_title', 'Cheapest Crypto License: Unlock Hidden Opportunities Today')</title>
-    
-    <meta name="description" content="@yield('meta_description', 'Get your Cheapest Crypto License quickly and securely with expert guidance. Simplify compliance and launch your crypto business today.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-
-
-    <!-- baki css / js -->
-</head>
-
-    <!-- component -->
+<x-app-layout
+    title="@yield('meta_title', 'Cheapest Crypto License: Unlock Hidden Opportunities Today')"
+    metaDescription="@yield('meta_description', 'Get your Cheapest Crypto License quickly and securely with expert guidance. Simplify compliance and launch your crypto business today.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<!-- component -->
     <div class="max-w-screen-lg mx-auto">
 
 

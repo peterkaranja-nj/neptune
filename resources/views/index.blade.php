@@ -1,12 +1,12 @@
 
 
-<x-app-layout>
+<x-app-layout
+    title="Neptune Corporate – Best Business Setup and Offshore Services"
+    metaDescription="Corporate solutions including IBC, LLC, registered agent, nominee services & virtual offices for global entrepreneurs and investors."
+    canonical="https://neptunecorporate.com/"
+>
     
-<head>
-    <title>@yield('meta_title', 'Neptune Corporate Best Business Setup and Offshore Services')</title>
-    <meta name="description" content="@yield('meta_description', 'Corporate solutions including IBC, LLC, registered agent, nominee services & virtual offices for global entrepreneurs and investors.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
+
     <main>
         <div class="">
             <div class="bg-image relative isolate px-6 pt-4 lg:px-8">

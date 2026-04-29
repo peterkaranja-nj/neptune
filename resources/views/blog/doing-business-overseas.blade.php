@@ -1,11 +1,8 @@
-<x-app-layout>
-       
-<head>
-    <title>@yield('meta_title', 'Doing Business Overseas: A Complete Guide for Entrepreneurs')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn how doing business overseas can grow your brand with expert guidance on company formation, banking, and compliance.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Doing Business Overseas: A Complete Guide for Entrepreneurs')"
+    metaDescription="@yield('meta_description', 'Learn how doing business overseas can grow your brand with expert guidance on company formation, banking, and compliance.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

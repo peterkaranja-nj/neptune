@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'What Is a Resident Agent? Explained for Businesses')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn what is a resident agent, their role in LLCs and corporations, and how professional services like Neptune Corporate keep your business compliant.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'What Is a Resident Agent? Explained for Businesses')"
+    metaDescription="@yield('meta_description', 'Learn what is a resident agent, their role in LLCs and corporations, and how professional services like Neptune Corporate keep your business compliant.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

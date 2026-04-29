@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Bank Account Freeze Rules: What You Must Know')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn the key rules of Bank Account Freeze Rules, why accounts get frozen, and what steps to take to unfreeze your funds quickly.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Bank Account Freeze Rules: What You Must Know')"
+    metaDescription="@yield('meta_description', 'Learn the key rules of Bank Account Freeze Rules, why accounts get frozen, and what steps to take to unfreeze your funds quickly.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>Top Benefits of International Trade Company Formation</title>
-    <meta name="description" content="Learn how international trade company formation can unlock global growth, simplify cross-border business, and boost your international success.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="Top Benefits of International Trade Company Formation"
+    metaDescription="Learn how international trade company formation can unlock global growth, simplify cross-border business, and boost your international success."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

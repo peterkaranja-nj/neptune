@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>Forex Trading License UK: Hidden Secrets Revealed</title>
-    <meta name="description" content="Get a complete guide on a forex trading license UK, including the process, costs, requirements, and FCA rules for starting a forex business.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="Forex Trading License UK: Hidden Secrets Revealed"
+    metaDescription="Get a complete guide on a forex trading license UK, including the process, costs, requirements, and FCA rules for starting a forex business."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

@@ -1,83 +1,9 @@
-<x-app-layout>
-<head>
-    <title>@yield('meta_title', 'Registered Agent Services Neptune Corporate')</title>
-    <meta name="description" content="@yield('meta_description', 'Trusted registered agent support for compliance, official correspondence, and legal requirements for your business entities.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-
-    <!-- Schema JSON-LD for Registered Agent Services Page -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BreadcrumbList",
-          "@id": "https://neptunecorporate.com/corporate/registered-agent-services#breadcrumb",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://neptunecorporate.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Registered Agent Services",
-              "item": "https://neptunecorporate.com/corporate/registered-agent-services"
-            }
-          ]
-        },
-        {
-          "@type": "ProfessionalService",
-          "@id": "https://neptunecorporate.com/#organization",
-          "name": "Neptune Fiduciaries",
-          "url": "https://neptunecorporate.com/",
-          "logo": "https://neptunecorporate.com/images/neptune-3.png",
-          "image": "https://neptunecorporate.com/images/hero-3.jpg",
-          "description": "Corporate solutions including IBC, LLC, registered agent, nominee services & virtual offices for global entrepreneurs and investors.",
-          "telephone": "+254 721 441 544",
-          "email": "info@neptunecorporate.com",
-          "priceRange": "$$",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Delta Corner Annex, Ring Rd Westlands",
-            "addressLocality": "Nairobi",
-            "postalCode": "00800",
-            "addressCountry": "KE"
-          },
-          "sameAs": [
-            "https://www.linkedin.com/company/neptune-fiduciaries-group/"
-          ],
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Corporate Services",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Registered Agent Services",
-                  "url": "https://neptunecorporate.com/corporate/registered-agent-services",
-                  "description": "Trusted registered agent services providing full support for compliance, official and meeting all legal requirements for your business entities.",
-                  "image": "https://neptunecorporate.com/images/hero-3.jpg"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://neptunecorporate.com/#website",
-          "url": "https://neptunecorporate.com/",
-          "name": "Neptune Fiduciaries",
-          "publisher": { "@id": "https://neptunecorporate.com/#organization" }
-        }
-      ]
-    }
-    </script>
-</head>
-
-  <main>
+<x-app-layout
+    title="@yield('meta_title', 'Registered Agent Services Neptune Corporate')"
+    metaDescription="@yield('meta_description', 'Trusted registered agent support for compliance, official correspondence, and legal requirements for your business entities.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<main>
     <div class="">
       <div class="bg-image relative isolate px-6 lg:px-8">
         <div class="py-20 sm:py-40 lg:py-28">

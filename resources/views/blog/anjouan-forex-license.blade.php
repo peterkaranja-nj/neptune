@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>Anjouan Forex License Hidden Benefits and Fast Approval</title>
-    <meta name="description" content="Discover the Anjouan Forex License benefits, fast approval process, compliance advantages, and how it helps launch your forex brokerage quickly and legally.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="Anjouan Forex License Hidden Benefits and Fast Approval"
+    metaDescription="Discover the Anjouan Forex License benefits, fast approval process, compliance advantages, and how it helps launch your forex brokerage quickly and legally."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

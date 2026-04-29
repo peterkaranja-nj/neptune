@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Trust and Foundation Registration Services for Easy Planning')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover how Trust and foundation registration services protect wealth, ensure legal compliance, and simplify estate and asset planning effectively.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Trust and Foundation Registration Services for Easy Planning')"
+    metaDescription="@yield('meta_description', 'Discover how Trust and foundation registration services protect wealth, ensure legal compliance, and simplify estate and asset planning effectively.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

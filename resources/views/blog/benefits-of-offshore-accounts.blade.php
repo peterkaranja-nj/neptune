@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Benefits of Offshore Accounts Every Business Should Know')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover the benefits of offshore accounts for businesses, from asset protection to global payments and tax efficiency, with expert guidance.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Benefits of Offshore Accounts Every Business Should Know')"
+    metaDescription="@yield('meta_description', 'Discover the benefits of offshore accounts for businesses, from asset protection to global payments and tax efficiency, with expert guidance.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

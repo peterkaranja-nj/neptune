@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>White Label Forex Brokerage: Launch Your Brand Fast</title>
-    <meta name="description" content="Launch a white label forex brokerage with ease. Get turnkey solutions, advanced trading tools, and expert guidance to grow your business fast">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="White Label Forex Brokerage: Launch Your Brand Fast"
+    metaDescription="Launch a white label forex brokerage with ease. Get turnkey solutions, advanced trading tools, and expert guidance to grow your business fast"
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

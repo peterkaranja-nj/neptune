@@ -1,11 +1,8 @@
-<x-app-layout>
-       
-<head>
-    <title>@yield('meta_title', 'Registered Agent Services USA: Stay Compliant & Protected')</title>
-    <meta name="description" content="@yield('meta_description', 'Trusted registered agent services USA to keep your business compliant, private, and stress-free with affordable online support from Neptune Corporate.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Registered Agent Services USA: Stay Compliant & Protected')"
+    metaDescription="@yield('meta_description', 'Trusted registered agent services USA to keep your business compliant, private, and stress-free with affordable online support from Neptune Corporate.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

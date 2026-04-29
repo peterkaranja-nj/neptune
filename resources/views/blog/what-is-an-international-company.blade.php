@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'What is an International Company? Start Going Global Today')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn what is an international company, its benefits, setup process, challenges, and how to expand your business globally with expert guidance.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'What is an International Company? Start Going Global Today')"
+    metaDescription="@yield('meta_description', 'Learn what is an international company, its benefits, setup process, challenges, and how to expand your business globally with expert guidance.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

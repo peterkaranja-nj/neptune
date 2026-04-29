@@ -1,18 +1,10 @@
-<x-app-layout>
+<x-app-layout
+    title="@yield('meta_title', 'Open US Bank Account Online from Abroad: Complete Guide')"
+    metaDescription="@yield('meta_description', 'Learn how to open a US bank account online from abroad. Step-by-step guide for foreigners with costs, rules, and expert help.')"
+    canonical="@yield('canonical', url()->current())"
+>
     <!-- component -->
-    
-     <head>
-     <title>@yield('meta_title', 'Open US Bank Account Online from Abroad: Complete Guide')</title>
-     <meta name="description" content="@yield('meta_description', 'Learn how to open a US bank account online from abroad. Step-by-step guide for foreigners with costs, rules, and expert help.')">
-     <link rel="canonical" href="@yield('canonical', url()->current())">
-
-
-
-    <!-- baki css / js -->
-</head>
-    
-    
-    <div class="max-w-screen-lg mx-auto">
+<div class="max-w-screen-lg mx-auto">
         <main class="mt-10">
 
             <div class="mb-4 md:mb-0 w-full mx-auto relative">

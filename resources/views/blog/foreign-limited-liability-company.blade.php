@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'What is a Foreign Limited Liability Company? Learn Now')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn what is a foreign limited liability company, its benefits, key features, and how to register a foreign LLC with ease and compliance.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'What is a Foreign Limited Liability Company? Learn Now')"
+    metaDescription="@yield('meta_description', 'Learn what is a foreign limited liability company, its benefits, key features, and how to register a foreign LLC with ease and compliance.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

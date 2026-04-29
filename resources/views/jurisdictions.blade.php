@@ -1,14 +1,9 @@
-<x-app-layout>
-    
-    <head>
-    <title>@yield('meta_title', 'Global Jurisdictions & Business Setup: Neptune Fiduciaries')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover top global jurisdictions for company formation and licensing with Neptune Fiduciaries. compliance and business options worldwide.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-
-    <!-- baki css / js -->
-</head>
-    
-    <div class="">
+<x-app-layout
+    title="@yield('meta_title', 'Global Jurisdictions & Business Setup: Neptune Fiduciaries')"
+    metaDescription="@yield('meta_description', 'Discover top global jurisdictions for company formation and licensing with Neptune Fiduciaries. compliance and business options worldwide.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<div class="">
         <div class="bg-image relative isolate px-6 lg:px-8">
 
             <div class="py-20 sm:py-40 lg:py-28">

@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>Employer Plan Assets Into Investment Management for Growth</title>
-    <meta name="description" content="Learn how to integrate employer plan assets into investment management using smart strategies for growth, risk control, and financial stability.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="Employer Plan Assets Into Investment Management for Growth"
+    metaDescription="Learn how to integrate employer plan assets into investment management using smart strategies for growth, risk control, and financial stability."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

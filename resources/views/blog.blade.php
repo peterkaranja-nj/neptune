@@ -1,13 +1,11 @@
-<x-app-layout>
+<x-app-layout
+    title="@yield('meta_title', 'Neptune Corporate Blog Tips on Business & Offshore Services')"
+    metaDescription="@yield('meta_description', 'Read expert guides, tips, and insights on IBC, LLC formation, registered agent services, and global business solutions.')"
+    canonical="@yield('canonical', url()->current())"
+>
     
 <!-- Blog Page -->
-<head>
-    <title>@yield('meta_title', 'Neptune Corporate Blog Tips on Business & Offshore Services')</title>
-    <meta name="description" content="@yield('meta_description', 'Read expert guides, tips, and insights on IBC, LLC formation, registered agent services, and global business solutions.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
-    <section class="w-full px-4 py-10 mx-auto max-w-7xl md:w-5/5">
+<section class="w-full px-4 py-10 mx-auto max-w-7xl md:w-5/5">
         <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
             <div class="col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-3">
                 <div class="mb-5">

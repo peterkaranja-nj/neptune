@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'What is Pension Services? Your Complete Guide to Retirement')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover what is Pension Services and how it helps businesses & individuals plan for retirement, secure income, and long-term financial stability.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'What is Pension Services? Your Complete Guide to Retirement')"
+    metaDescription="@yield('meta_description', 'Discover what is Pension Services and how it helps businesses & individuals plan for retirement, secure income, and long-term financial stability.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

@@ -1,13 +1,9 @@
-<x-app-layout>
- 
-<head>
-    
-     <title>@yield('meta_title', 'St Lucia Forex License: Offshore Broker Setup Guide')</title>
-     <meta name="description" content="@yield('meta_description', 'Learn how to St Lucia Forex License with minimal costs, legal compliance, and flexible offshore company setup.')">
-     <link rel="canonical" href="@yield('canonical', url()->current())">
-
-</head>
-    <!-- component -->
+<x-app-layout
+    title="@yield('meta_title', 'St Lucia Forex License: Offshore Broker Setup Guide')"
+    metaDescription="@yield('meta_description', 'Learn how to St Lucia Forex License with minimal costs, legal compliance, and flexible offshore company setup.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<!-- component -->
     <div class="max-w-screen-lg mx-auto">
 
 

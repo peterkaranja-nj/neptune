@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Original vs Appellate Jurisdiction Explained Clearly')</title>
-    <meta name="description" content="@yield('meta_description', 'Understand original vs appellate jurisdiction, key differences, real examples, and how courts use each in legal cases and appeals.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Original vs Appellate Jurisdiction Explained Clearly')"
+    metaDescription="@yield('meta_description', 'Understand original vs appellate jurisdiction, key differences, real examples, and how courts use each in legal cases and appeals.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

@@ -1,11 +1,8 @@
-<x-app-layout>
-       
-<head>
-    <title>@yield('meta_title', 'U.S. Citizen with Foreign Business: Grow Worldwide Today')</title>
-    <meta name="description" content="@yield('meta_description', 'Neptune Corporate Expert offshore company formation, compliance, and international banking support for U.S. citizens with Foreign Business.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'U.S. Citizen with Foreign Business: Grow Worldwide Today')"
+    metaDescription="@yield('meta_description', 'Neptune Corporate Expert offshore company formation, compliance, and international banking support for U.S. citizens with Foreign Business.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

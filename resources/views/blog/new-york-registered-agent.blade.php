@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'New York Registered Agent: Protect Your Company Easily')</title>
-    <meta name="description" content="@yield('meta_description', 'Find a reliable New York registered agent to handle legal documents and protect your business with Neptune Corporate’s expert services.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'New York Registered Agent: Protect Your Company Easily')"
+    metaDescription="@yield('meta_description', 'Find a reliable New York registered agent to handle legal documents and protect your business with Neptune Corporate’s expert services.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

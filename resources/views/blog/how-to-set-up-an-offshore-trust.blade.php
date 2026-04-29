@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>How to Set Up An Offshore Trust: Secure Your Wealth Today</title>
-    <meta name="description" content="Learn how to set up an offshore trust to protect assets, plan your estate, and secure your wealth with professional guidance from Neptune Corporate.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="How to Set Up An Offshore Trust: Secure Your Wealth Today"
+    metaDescription="Learn how to set up an offshore trust to protect assets, plan your estate, and secure your wealth with professional guidance from Neptune Corporate."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

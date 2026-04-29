@@ -1,11 +1,8 @@
-<x-app-layout>
-       
-<head>
-    <title>@yield('meta_title', 'Business Formation Consulting Services for Startups')</title>
-    <meta name="description" content="@yield('meta_description', 'Get expert business formation consulting to register your company, stay compliant, and grow your startup with Neptune Corporate.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Business Formation Consulting Services for Startups')"
+    metaDescription="@yield('meta_description', 'Get expert business formation consulting to register your company, stay compliant, and grow your startup with Neptune Corporate.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

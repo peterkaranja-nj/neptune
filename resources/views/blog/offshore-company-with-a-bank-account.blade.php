@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Offshore Company with a Bank Account Made Easy')</title>
-    <meta name="description" content="@yield('meta_description', 'Set up your offshore company with a bank account quickly and securely. Simplified steps for global businesses and international banking.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Offshore Company with a Bank Account Made Easy')"
+    metaDescription="@yield('meta_description', 'Set up your offshore company with a bank account quickly and securely. Simplified steps for global businesses and international banking.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

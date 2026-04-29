@@ -1,11 +1,8 @@
-<x-app-layout>
-       
-<head>
-    <title>@yield('meta_title', 'Professional International Tax Service for Global Businesses')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover expert international tax service for smooth compliance, smart planning, and hassle-free international business tax solutions.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Professional International Tax Service for Global Businesses')"
+    metaDescription="@yield('meta_description', 'Discover expert international tax service for smooth compliance, smart planning, and hassle-free international business tax solutions.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

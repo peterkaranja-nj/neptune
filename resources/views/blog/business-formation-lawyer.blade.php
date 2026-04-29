@@ -1,18 +1,10 @@
-<x-app-layout>
+<x-app-layout
+    title="@yield('meta_title', 'Business Formation Lawyer: Start Your Company the Right Way')"
+    metaDescription="@yield('meta_description', 'Learn how a business formation lawyer helps you register, structure, and protect your company locally and offshore with expert legal support.')"
+    canonical="@yield('canonical', url()->current())"
+>
     <!-- component -->
-    
-     <head>
-    <title>@yield('meta_title', 'Business Formation Lawyer: Start Your Company the Right Way')</title>
-   
-    <meta name="description" content="@yield('meta_description', 'Learn how a business formation lawyer helps you register, structure, and protect your company locally and offshore with expert legal support.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-
-
-    <!-- baki css / js -->
-</head>
-    
-    
-    <div class="max-w-screen-lg mx-auto">
+<div class="max-w-screen-lg mx-auto">
         <main class="mt-10">
 
             <div class="mb-4 md:mb-0 w-full mx-auto relative">

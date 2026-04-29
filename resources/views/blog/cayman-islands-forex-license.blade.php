@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>Cayman Islands Forex License: Ultimate Guide 2026</title>
-    <meta name="description" content="Explore Cayman Islands forex license requirements, costs, and process in 2026 to start a trusted offshore forex brokerage easily and legally.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="Cayman Islands Forex License: Ultimate Guide 2026"
+    metaDescription="Explore Cayman Islands forex license requirements, costs, and process in 2026 to start a trusted offshore forex brokerage easily and legally."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

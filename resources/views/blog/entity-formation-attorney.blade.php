@@ -1,13 +1,8 @@
-<x-app-layout>
-       
-<head>
-    <title>@yield('meta_title', 'Entity Formation Attorney: Expert Legal and Business Guidance')</title>
-    <meta name="description" content="@yield('meta_description', 'Hire an entity formation attorney for company formation, compliance, and offshore business setup with Neptunecorporate.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-
-    <!-- baki css / js -->
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Entity Formation Attorney: Expert Legal and Business Guidance')"
+    metaDescription="@yield('meta_description', 'Hire an entity formation attorney for company formation, compliance, and offshore business setup with Neptunecorporate.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

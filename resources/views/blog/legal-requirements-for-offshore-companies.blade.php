@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>Legal Requirements for Offshore Companies: A Complete Guide</title>
-    <meta name="description" content="Learn the essential legal requirements for offshore companies to stay compliant, open bank accounts, and avoid costly mistakes internationally.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="Legal Requirements for Offshore Companies: A Complete Guide"
+    metaDescription="Learn the essential legal requirements for offshore companies to stay compliant, open bank accounts, and avoid costly mistakes internationally."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>Seychelles Forex Brokerage License: Unlock Offshore Success</title>
-    <meta name="description" content="Get your Seychelles forex brokerage license in 2026 and enjoy offshore benefits, regulatory compliance, and global business growth.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="Seychelles Forex Brokerage License: Unlock Offshore Success"
+    metaDescription="Get your Seychelles forex brokerage license in 2026 and enjoy offshore benefits, regulatory compliance, and global business growth."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Best Jurisdictions for Online Business and Global Growth')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover the best jurisdictions for online business with low taxes, strong privacy, and easy setup. Choose the right country to grow globally.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Best Jurisdictions for Online Business and Global Growth')"
+    metaDescription="@yield('meta_description', 'Discover the best jurisdictions for online business with low taxes, strong privacy, and easy setup. Choose the right country to grow globally.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'SSI Monitor Your Bank Account Easily and Safely')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn how SSI monitor your bank account, what triggers checks, and how to stay compliant while protecting your benefits and finances.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'SSI Monitor Your Bank Account Easily and Safely')"
+    metaDescription="@yield('meta_description', 'Learn how SSI monitor your bank account, what triggers checks, and how to stay compliant while protecting your benefits and finances.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

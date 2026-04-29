@@ -1,81 +1,9 @@
-<x-app-layout>
-<head>
-    <title>@yield('meta_title', 'Nominee Director & Shareholder Services Neptune Corporate')</title>
-    <meta name="description" content="@yield('meta_description', 'Confidential nominee director and shareholder access solutions to protect privacy and streamline corporate governance.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-
-    <!-- Schema JSON-LD for Nominee Director and Shareholder Access Page -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "ProfessionalService",
-          "@id": "https://neptunecorporate.com/#organization",
-          "name": "Neptune Fiduciaries",
-          "url": "https://neptunecorporate.com/",
-          "logo": "https://neptunecorporate.com/images/neptune-3.png",
-          "image": "https://neptunecorporate.com/images/hero-3.jpg",
-          "description": "Corporate solutions including IBC, LLC, registered agent, nominee services & virtual offices for global entrepreneurs and investors.",
-          "telephone": "+254 721 441 544",
-          "email": "info@neptunecorporate.com",
-          "priceRange": "$$",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Delta Corner Annex, Ring Rd, Westlands",
-            "addressLocality": "Nairobi",
-            "postalCode": "00800",
-            "addressCountry": "KE"
-          },
-          "sameAs": [
-            "https://www.linkedin.com/company/neptune-fiduciaries-group/"
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://neptunecorporate.com/#website",
-          "url": "https://neptunecorporate.com/",
-          "name": "Neptune Fiduciaries",
-          "publisher": {
-            "@id": "https://neptunecorporate.com/#organization"
-          }
-        },
-        {
-          "@type": "BreadcrumbList",
-          "@id": "https://neptunecorporate.com/corporate/nominee-director-and-shareholder-access#breadcrumb",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://neptunecorporate.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Nominee Director and Shareholder Access",
-              "item": "https://neptunecorporate.com/corporate/nominee-director-and-shareholder-access"
-            }
-          ]
-        },
-        {
-          "@type": "Service",
-          "@id": "https://neptunecorporate.com/corporate/nominee-director-and-shareholder-access#service",
-          "name": "Nominee Director and Shareholder Access",
-          "serviceType": "Corporate Governance Services",
-          "description": "Confidential nominee director and shareholder solutions designed to protect your privacy while streamlining corporate governance and management.",
-          "provider": {
-            "@id": "https://neptunecorporate.com/#organization"
-          },
-          "areaServed": "Worldwide",
-          "image": "https://neptunecorporate.com/images/hero-3.jpg",
-          "url": "https://neptunecorporate.com/corporate/nominee-director-and-shareholder-access"
-        }
-      ]
-    }
-    </script>
-</head>
-  <main>
+<x-app-layout
+    title="@yield('meta_title', 'Nominee Director & Shareholder Services Neptune Corporate')"
+    metaDescription="@yield('meta_description', 'Confidential nominee director and shareholder access solutions to protect privacy and streamline corporate governance.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<main>
     <div class="">
       <div class="bg-image relative isolate px-6 lg:px-8">
         <div class="py-20 sm:py-40 lg:py-28">

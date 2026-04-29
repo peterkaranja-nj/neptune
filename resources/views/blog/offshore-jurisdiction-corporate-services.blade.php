@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Offshore Jurisdiction Corporate Services for Entrepreneurs')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover how offshore jurisdiction corporate services help businesses expand globally and manage international operations effectively.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Offshore Jurisdiction Corporate Services for Entrepreneurs')"
+    metaDescription="@yield('meta_description', 'Discover how offshore jurisdiction corporate services help businesses expand globally and manage international operations effectively.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

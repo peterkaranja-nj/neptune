@@ -1,12 +1,9 @@
-<x-app-layout>
-    
-<head>
-    <title>@yield('meta_title', 'About Neptune Corporate Expert Business Services')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover Neptune Corporate: learn about our mission, and dedicated expert team providing trusted company formation and corporate support worldwide.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
-  <main>
+<x-app-layout
+    title="@yield('meta_title', 'About Neptune Corporate Expert Business Services')"
+    metaDescription="@yield('meta_description', 'Discover Neptune Corporate: learn about our mission, and dedicated expert team providing trusted company formation and corporate support worldwide.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<main>
     <div class="">
       <div class="bg-image relative isolate px-6 lg:px-8">
         <div class="py-20 sm:py-40 lg:py-28">

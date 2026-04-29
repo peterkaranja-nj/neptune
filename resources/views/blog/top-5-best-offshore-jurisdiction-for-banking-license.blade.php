@@ -1,15 +1,9 @@
-<x-app-layout>
-       
-<head>
-     <title>@yield('meta_title', 'Top Offshore Jurisdictions for Banking Licenses Worldwide')</title>
-     <meta name="description" content="@yield('meta_description', 'Discover the best offshore jurisdictions for banking licenses, offering global access, secure regulations, and flexible licensing options.')">
-     <link rel="canonical" href="@yield('canonical', url()->current())">
-
-
-
-    <!-- baki css / js -->
-</head>
-    <!-- component -->
+<x-app-layout
+    title="@yield('meta_title', 'Top Offshore Jurisdictions for Banking Licenses Worldwide')"
+    metaDescription="@yield('meta_description', 'Discover the best offshore jurisdictions for banking licenses, offering global access, secure regulations, and flexible licensing options.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<!-- component -->
     <div class="max-w-screen-lg mx-auto">
 
 

@@ -1,11 +1,8 @@
-<x-app-layout>
-       
-<head>
-    <title>@yield('meta_title', 'Offshore Company Formation: Your Key to Global Business')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn how offshore company formation helps your business expand globally with privacy, tax benefits, and trusted services.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Offshore Company Formation: Your Key to Global Business')"
+    metaDescription="@yield('meta_description', 'Learn how offshore company formation helps your business expand globally with privacy, tax benefits, and trusted services.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

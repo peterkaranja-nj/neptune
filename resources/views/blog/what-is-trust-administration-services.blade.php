@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>What Is Trust Administration Services? Explained</title>
-    <meta name="description" content="Learn what is trust administration services, how it works, and why professionals like Neptune Corporate ensure asset protection & estate planning success.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="What Is Trust Administration Services? Explained"
+    metaDescription="Learn what is trust administration services, how it works, and why professionals like Neptune Corporate ensure asset protection & estate planning success."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

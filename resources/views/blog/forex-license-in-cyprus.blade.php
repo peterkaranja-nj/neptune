@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>Forex License in Cyprus: Ultimate Setup Guide 2026</title>
-    <meta name="description" content="Learn how to get a forex license in Cyprus: requirements, process, costs & benefits to enter the EU forex market with CySEC approval.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="Forex License in Cyprus: Ultimate Setup Guide 2026"
+    metaDescription="Learn how to get a forex license in Cyprus: requirements, process, costs & benefits to enter the EU forex market with CySEC approval."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

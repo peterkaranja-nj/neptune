@@ -1,13 +1,9 @@
-<x-app-layout>
-<head>
-    <title>@yield('meta_title', 'International Business Company (IBC) Formation Services')</title>
-    <meta name="description" content="@yield('meta_description', 'Set up your International Business Company (IBC) with NeptuneCorporate for low-tax benefits, confidentiality, and global business operations.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-
-
-    <!-- baki css / js -->
-</head>
-    <!-- component -->
+<x-app-layout
+    title="@yield('meta_title', 'International Business Company (IBC) Formation Services')"
+    metaDescription="@yield('meta_description', 'Set up your International Business Company (IBC) with NeptuneCorporate for low-tax benefits, confidentiality, and global business operations.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<!-- component -->
     <div class="max-w-screen-lg mx-auto">
         <main class="mt-10">
             <div class="mb-4 md:mb-0 w-full mx-auto relative">

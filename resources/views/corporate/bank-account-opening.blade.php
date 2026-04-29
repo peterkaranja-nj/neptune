@@ -1,84 +1,9 @@
-<x-app-layout>
-    
-    <head>
-    <title>@yield('meta_title', 'Corporate Bank Account Opening Services: Neptune Fiduciaries')</title>
-    <meta name="description" content="@yield('meta_description', 'Secure corporate bank account opening support with Neptune Fiduciaries. Expert guidance, global banks, compliance and fast setup solutions for businesses.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-
-    <!-- Schema JSON-LD for Bank Account Opening Page -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "ProfessionalService",
-          "@id": "https://neptunecorporate.com/#organization",
-          "name": "Neptune Fiduciaries",
-          "url": "https://neptunecorporate.com/",
-          "logo": "https://neptunecorporate.com/images/neptune-3.png",
-          "image": "https://neptunecorporate.com/images/hero-3.jpg",
-          "description": "Corporate solutions including IBC, LLC, registered agent, nominee services & virtual offices for global entrepreneurs and investors.",
-          "telephone": "+254 721 441 544",
-          "email": "info@neptunecorporate.com",
-          "priceRange": "$$",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Delta Corner Annex, Ring Rd, Westlands",
-            "addressLocality": "Nairobi",
-            "postalCode": "00800",
-            "addressCountry": "KE"
-          },
-          "sameAs": [
-            "https://www.linkedin.com/company/neptune-fiduciaries-group/"
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://neptunecorporate.com/#website",
-          "url": "https://neptunecorporate.com/",
-          "name": "Neptune Fiduciaries",
-          "publisher": {
-            "@id": "https://neptunecorporate.com/#organization"
-          }
-        },
-        {
-          "@type": "BreadcrumbList",
-          "@id": "https://neptunecorporate.com/corporate/bank-account-opening#breadcrumb",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://neptunecorporate.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Bank Account Opening",
-              "item": "https://neptunecorporate.com/corporate/bank-account-opening"
-            }
-          ]
-        },
-        {
-          "@type": "Service",
-          "@id": "https://neptunecorporate.com/corporate/bank-account-opening#service",
-          "name": "Bank Account Opening",
-          "serviceType": "Financial Corporate Services",
-          "description": "Secure corporate bank account opening support with Neptune Fiduciaries. Expert guidance, global banks, compliance and fast setup solutions for businesses.",
-          "provider": {
-            "@id": "https://neptunecorporate.com/#organization"
-          },
-          "areaServed": "Worldwide",
-          "image": "https://neptunecorporate.com/images/hero-3.jpg",
-          "url": "https://neptunecorporate.com/corporate/bank-account-opening"
-        }
-      ]
-    }
-    </script>
-
-    <!-- baki css / js -->
-</head>
-  <main>
+<x-app-layout
+    title="@yield('meta_title', 'Corporate Bank Account Opening Services: Neptune Fiduciaries')"
+    metaDescription="@yield('meta_description', 'Secure corporate bank account opening support with Neptune Fiduciaries. Expert guidance, global banks, compliance and fast setup solutions for businesses.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<main>
     <div class="">
       <div class="bg-image relative isolate px-6 lg:px-8">
         <div class="py-20 sm:py-40 lg:py-28">

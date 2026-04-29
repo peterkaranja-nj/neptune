@@ -1,11 +1,9 @@
-<x-app-layout>
-<head>
-    <title>@yield('meta_title', 'Virtual Office Services Neptune Corporate')</title>
-    <meta name="description" content="@yield('meta_description', 'Virtual office solutions offering business address, mail handling, and professional support to enhance your company’s image and operational efficiency.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>    
-    
-  <main>
+<x-app-layout
+    title="@yield('meta_title', 'Virtual Office Services Neptune Corporate')"
+    metaDescription="@yield('meta_description', 'Virtual office solutions offering business address, mail handling, and professional support to enhance your company’s image and operational efficiency.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<main>
     <div class="">
       <div class="bg-image relative isolate px-6 lg:px-8">
         <div class="py-20 sm:py-40 lg:py-28">

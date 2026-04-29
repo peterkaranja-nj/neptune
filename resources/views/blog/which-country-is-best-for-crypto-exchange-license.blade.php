@@ -1,12 +1,9 @@
-<x-app-layout>
-<head>
-    <title>@yield('meta_title', 'Crypto Exchange License: Best Countries & Requirements')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover the best countries for a crypto exchange license, key requirements, costs, regulations, and how to choose the right jurisdiction.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-
-    <!-- baki css / js -->
-</head>
-    <!-- component -->
+<x-app-layout
+    title="@yield('meta_title', 'Crypto Exchange License: Best Countries & Requirements')"
+    metaDescription="@yield('meta_description', 'Discover the best countries for a crypto exchange license, key requirements, costs, regulations, and how to choose the right jurisdiction.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<!-- component -->
     <div class="max-w-screen-lg mx-auto">
 
 

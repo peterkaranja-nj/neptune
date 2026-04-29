@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Best Florida Registered Agents for Your Business Success')</title>
-    <meta name="description" content="@yield('meta_description', 'Protect your business with trusted Florida registered agents. Stay compliant, secure, and stress-free with expert document handling services.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Best Florida Registered Agents for Your Business Success')"
+    metaDescription="@yield('meta_description', 'Protect your business with trusted Florida registered agents. Stay compliant, secure, and stress-free with expert document handling services.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

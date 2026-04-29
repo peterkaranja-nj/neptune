@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Find Best South Carolina Registered Agent for Your Business')</title>
-    <meta name="description" content="@yield('meta_description', 'Get a trusted South Carolina registered agent to handle legal documents, ensure compliance, and protect your business. Reliable services by Neptune.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Find Best South Carolina Registered Agent for Your Business')"
+    metaDescription="@yield('meta_description', 'Get a trusted South Carolina registered agent to handle legal documents, ensure compliance, and protect your business. Reliable services by Neptune.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

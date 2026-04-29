@@ -1,10 +1,9 @@
-<x-app-layout>
-      <head>
-         <title>@yield('meta_title', 'Credit and Bond Institution Setup Services for Businesses')</title>
-         <meta name="description" content="@yield('meta_description', 'Establish credit and bond institutions with professional services ensuring regulatory approval, compliance, and efficient operational setup for global business.')">
-         <link rel="canonical" href="@yield('canonical', url()->current())">
-     </head>
- <main>
+<x-app-layout
+    title="@yield('meta_title', 'Credit and Bond Institution Setup Services for Businesses')"
+    metaDescription="@yield('meta_description', 'Establish credit and bond institutions with professional services ensuring regulatory approval, compliance, and efficient operational setup for global business.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<main>
     <div class="">
       <div class="bg-image relative isolate px-6 lg:px-8">
         <div class="py-20 sm:py-40 lg:py-28">

@@ -1,14 +1,9 @@
-<x-app-layout>
-      <head>
-    <title>@yield('meta_title', 'EMI license, E-Money & Payment Institution License Benefits')</title>      
-    <meta name="description" content="@yield('meta_description', 'Get your EMI license, E-money, and Payment Institution license easily. Learn requirements, benefits, and the process to start your payment business.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-
-
-    <!-- baki css / js -->
-</head>
-    
-    <!-- component -->
+<x-app-layout
+    title="@yield('meta_title', 'EMI license, E-Money & Payment Institution License Benefits')"
+    metaDescription="@yield('meta_description', 'Get your EMI license, E-money, and Payment Institution license easily. Learn requirements, benefits, and the process to start your payment business.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<!-- component -->
     <div class="max-w-screen-lg mx-auto">
 
 

@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>Forex Brokerage Business Plan: Proven Strategy for Growth</title>
-    <meta name="description" content="Learn how to build a powerful Forex Brokerage Business Plan with step-by-step strategies, setup insights, and proven growth techniques for success.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="Forex Brokerage Business Plan: Proven Strategy for Growth"
+    metaDescription="Learn how to build a powerful Forex Brokerage Business Plan with step-by-step strategies, setup insights, and proven growth techniques for success."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

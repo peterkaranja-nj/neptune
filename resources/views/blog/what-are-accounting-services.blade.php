@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'What Are Accounting Services? Complete Guide for Businesses')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover what are accounting services and how professional support in bookkeeping, financial reporting, and tax planning can boost your business.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'What Are Accounting Services? Complete Guide for Businesses')"
+    metaDescription="@yield('meta_description', 'Discover what are accounting services and how professional support in bookkeeping, financial reporting, and tax planning can boost your business.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

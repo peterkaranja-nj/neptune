@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>Domestic vs Offshore Asset Protection Trusts Explained</title>
-    <meta name="description" content="Compare domestic vs offshore asset protection trusts and learn which option secures your wealth, offers privacy, and fits your financial goals.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="Domestic vs Offshore Asset Protection Trusts Explained"
+    metaDescription="Compare domestic vs offshore asset protection trusts and learn which option secures your wealth, offers privacy, and fits your financial goals."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

@@ -1,11 +1,8 @@
-<x-app-layout>
-       
-<head>
-    <title>@yield('meta_title', 'Seychelles Offshore Company Formation for Global Businesses')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn how Seychelles offshore company formation works, its benefits, key sectors, and how Neptune Corporate helps you set up fast and legally.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Seychelles Offshore Company Formation for Global Businesses')"
+    metaDescription="@yield('meta_description', 'Learn how Seychelles offshore company formation works, its benefits, key sectors, and how Neptune Corporate helps you set up fast and legally.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

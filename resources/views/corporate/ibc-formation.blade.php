@@ -1,91 +1,9 @@
-<x-app-layout>
- <head>
-    <title>@yield('meta_title', 'IBC Formation Services Neptune Corporate Solutions')</title>
-    <meta name="description" content="@yield('meta_description', 'Professional IBC formation services to help you register, structure and manage your international business company with ease.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-
-    <!-- Schema JSON-LD for IBC Formation Page -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://neptunecorporate.com/#website",
-          "url": "https://neptunecorporate.com/",
-          "name": "Neptune Fiduciaries",
-          "publisher": { "@id": "https://neptunecorporate.com/#organization" }
-        },
-        {
-          "@type": "BreadcrumbList",
-          "@id": "https://neptunecorporate.com/corporate/ibc-formation#breadcrumb",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://neptunecorporate.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "IBC Formation",
-              "item": "https://neptunecorporate.com/corporate/ibc-formation"
-            }
-          ]
-        },
-        {
-          "@type": "ProfessionalService",
-          "@id": "https://neptunecorporate.com/#organization",
-          "name": "Neptune Fiduciaries",
-          "url": "https://neptunecorporate.com/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://neptunecorporate.com/images/neptune-3.png"
-          },
-          "image": "https://neptunecorporate.com/images/hero-3.jpg",
-          "description": "Corporate solutions including IBC, LLC, registered agent, nominee services & virtual offices for global entrepreneurs and investors.",
-          "telephone": "+254 721 441 544",
-          "email": "info@neptunecorporate.com",
-          "priceRange": "$$",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Delta Corner Annex, Ring Rd Westlands",
-            "addressLocality": "Nairobi",
-            "postalCode": "00800",
-            "addressCountry": "KE"
-          },
-          "sameAs": [
-            "https://www.linkedin.com/company/neptune-fiduciaries-group/"
-          ]
-        },
-        {
-          "@type": "Service",
-          "@id": "https://neptunecorporate.com/corporate/ibc-formation#service",
-          "name": "International Business Company (IBC) Formation",
-          "serviceType": "Corporate Formation",
-          "provider": { "@id": "https://neptunecorporate.com/#organization" },
-          "description": "Professional IBC formation services to help you seamlessly register, structure, and efficiently manage your international business company.",
-          "areaServed": "Worldwide",
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "IBC Services",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "IBC Registration & Management"
-                }
-              }
-            ]
-          }
-        }
-      ]
-    }
-    </script>
-</head>
-  <main>
+<x-app-layout
+    title="@yield('meta_title', 'IBC Formation Services Neptune Corporate Solutions')"
+    metaDescription="@yield('meta_description', 'Professional IBC formation services to help you register, structure and manage your international business company with ease.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<main>
     <div class="">
       <div class="bg-image relative isolate px-6 lg:px-8">
         <div class="py-20 sm:py-40 lg:py-28">

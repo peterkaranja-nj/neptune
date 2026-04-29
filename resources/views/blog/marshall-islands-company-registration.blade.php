@@ -1,11 +1,8 @@
-<x-app-layout>
-       
-<head>
-    <title>@yield('meta_title', 'Marshall Islands Company Registration Guide 2026')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn how to complete Marshall Islands company registration quickly. Expert offshore setup, banking, and compliance services by Neptune Corporate.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Marshall Islands Company Registration Guide 2026')"
+    metaDescription="@yield('meta_description', 'Learn how to complete Marshall Islands company registration quickly. Expert offshore setup, banking, and compliance services by Neptune Corporate.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

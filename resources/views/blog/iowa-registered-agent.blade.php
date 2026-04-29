@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Iowa Registered Agent: Secure Your Business Today')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover how an Iowa registered agent keeps your business compliant, secure, and stress-free. Learn benefits and professional services today.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Iowa Registered Agent: Secure Your Business Today')"
+    metaDescription="@yield('meta_description', 'Discover how an Iowa registered agent keeps your business compliant, secure, and stress-free. Learn benefits and professional services today.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

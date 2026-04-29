@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>How Much Does It Cost to Start a Forex Brokerage: Guide</title>
-    <meta name="description" content="Discover How Much Does It Cost to start a Forex Brokerage, including licensing, technology, liquidity, and setup expenses for launching a forex firm.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="How Much Does It Cost to Start a Forex Brokerage: Guide"
+    metaDescription="Discover How Much Does It Cost to start a Forex Brokerage, including licensing, technology, liquidity, and setup expenses for launching a forex firm."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

@@ -1,13 +1,9 @@
-<x-app-layout>
-       
-<head>
-     <title>@yield('meta_title', 'Best LLC Formation: Easy Guide to Start Your LLC Today')</title>
-     <meta name="description" content="@yield('meta_description', 'Learn the best LLC formation steps, benefits, and tips. Start your business confidently with expert guidance and registered agent support.')">
-     <link rel="canonical" href="@yield('canonical', url()->current())">
-
-    <!-- baki css / js -->
-</head>
-    <!-- component -->
+<x-app-layout
+    title="@yield('meta_title', 'Best LLC Formation: Easy Guide to Start Your LLC Today')"
+    metaDescription="@yield('meta_description', 'Learn the best LLC formation steps, benefits, and tips. Start your business confidently with expert guidance and registered agent support.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<!-- component -->
     <div class="max-w-screen-lg mx-auto">
 
         <main class="mt-10">

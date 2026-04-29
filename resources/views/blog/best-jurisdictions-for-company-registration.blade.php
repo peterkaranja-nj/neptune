@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Best Jurisdictions for Company Registration: Expert Guide')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover the best jurisdictions for company registration. Learn how to choose business-friendly countries for offshore setup, taxes, and global growth.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Best Jurisdictions for Company Registration: Expert Guide')"
+    metaDescription="@yield('meta_description', 'Discover the best jurisdictions for company registration. Learn how to choose business-friendly countries for offshore setup, taxes, and global growth.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

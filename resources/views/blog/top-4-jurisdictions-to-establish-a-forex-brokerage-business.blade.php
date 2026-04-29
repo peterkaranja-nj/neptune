@@ -1,15 +1,9 @@
-<x-app-layout>
-       
-<head>
-     <title>@yield('meta_title', 'Best Jurisdictions to Establish a Forex Brokerage Business')</title>
-     <meta name="description" content="@yield('meta_description', 'Discover the top 4 jurisdictions to establish a Forex brokerage business. Learn where regulations, costs, and opportunities align best for success.')">
-     <link rel="canonical" href="@yield('canonical', url()->current())">
-
-
-
-    <!-- baki css / js -->
-</head>
-    <!-- component -->
+<x-app-layout
+    title="@yield('meta_title', 'Best Jurisdictions to Establish a Forex Brokerage Business')"
+    metaDescription="@yield('meta_description', 'Discover the top 4 jurisdictions to establish a Forex brokerage business. Learn where regulations, costs, and opportunities align best for success.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<!-- component -->
     <div class="max-w-screen-lg mx-auto">
 
 

@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>Asset Management vs Investment Management Explained</title>
-    <meta name="description" content="Understand asset management vs investment management in simple terms. Learn key differences, roles, and how both help business growth and wealth.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="Asset Management vs Investment Management Explained"
+    metaDescription="Understand asset management vs investment management in simple terms. Learn key differences, roles, and how both help business growth and wealth."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

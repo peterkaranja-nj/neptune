@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Corporate International Tax: Boost Profits Legally Today')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn how corporate international tax strategies help businesses stay compliant, reduce costs, and boost global profits effectively.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Corporate International Tax: Boost Profits Legally Today')"
+    metaDescription="@yield('meta_description', 'Learn how corporate international tax strategies help businesses stay compliant, reduce costs, and boost global profits effectively.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

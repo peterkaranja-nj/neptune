@@ -1,13 +1,8 @@
-<x-app-layout>
-       
-<head>
-    <title>@yield('meta_title', 'Delaware Limited Liability Company Formation: Easy Guide')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn step-by-step Delaware limited liability company formation, benefits, common mistakes, and professional service advantages.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-
-    <!-- baki css / js -->
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Delaware Limited Liability Company Formation: Easy Guide')"
+    metaDescription="@yield('meta_description', 'Learn step-by-step Delaware limited liability company formation, benefits, common mistakes, and professional service advantages.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

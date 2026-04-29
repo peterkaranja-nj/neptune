@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>Vanuatu Forex Brokerage License: Fast, Legal & Profitable</title>
-    <meta name="description" content="Learn how to get a Vanuatu Forex Brokerage License, meet VFSC regulations, and start your offshore forex business easily and legally.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="Vanuatu Forex Brokerage License: Fast, Legal & Profitable"
+    metaDescription="Learn how to get a Vanuatu Forex Brokerage License, meet VFSC regulations, and start your offshore forex business easily and legally."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

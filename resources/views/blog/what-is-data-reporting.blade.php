@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>What Is Data Reporting? Unlock Insights for Business Growth</title>
-    <meta name="description" content="Learn what is data reporting and how it helps businesses track performance, stay compliant, and make smarter decisions for growth.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="What Is Data Reporting? Unlock Insights for Business Growth"
+    metaDescription="Learn what is data reporting and how it helps businesses track performance, stay compliant, and make smarter decisions for growth."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

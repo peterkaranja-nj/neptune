@@ -1,11 +1,9 @@
-<x-app-layout>
-    <head>
-        <title>@yield('meta_title', 'Corporate Pension Services and Solutions for Businesses Now')</title>
-         <meta name="description" content="@yield('meta_description', 'Tailored pension services offering compliance-focused solutions to secure long-term financial planning, effective management, and optimized benefits for clients.')">
-         <link rel="canonical" href="@yield('canonical', url()->current())">
-     </head>
-
-  <main>
+<x-app-layout
+    title="@yield('meta_title', 'Corporate Pension Services and Solutions for Businesses Now')"
+    metaDescription="@yield('meta_description', 'Tailored pension services offering compliance-focused solutions to secure long-term financial planning, effective management, and optimized benefits for clients.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<main>
     <div class="">
       <div class="bg-image relative isolate px-6 lg:px-8">
         <div class="py-20 sm:py-40 lg:py-28">

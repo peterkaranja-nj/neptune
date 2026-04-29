@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Difference Between Outsourcing and Offshoring Explained')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover the difference between outsourcing and offshoring and learn how businesses save costs, access talent, and expand globally with ease.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Difference Between Outsourcing and Offshoring Explained')"
+    metaDescription="@yield('meta_description', 'Discover the difference between outsourcing and offshoring and learn how businesses save costs, access talent, and expand globally with ease.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Corporate Tax Optimization Offshore Made Simple and Legal')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover how corporate tax optimization offshore can legally reduce taxes, protect assets, and boost profits with smart international strategies.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Corporate Tax Optimization Offshore Made Simple and Legal')"
+    metaDescription="@yield('meta_description', 'Discover how corporate tax optimization offshore can legally reduce taxes, protect assets, and boost profits with smart international strategies.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

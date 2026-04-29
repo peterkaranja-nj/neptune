@@ -1,17 +1,10 @@
-<x-app-layout>
+<x-app-layout
+    title="@yield('meta_title', 'International Company Formation: Global Business Setup Guide')"
+    metaDescription="@yield('meta_description', 'Learn how international company formation helps startups & businesses expand globally with offshore registration & expert guidance.')"
+    canonical="@yield('canonical', url()->current())"
+>
     <!-- component -->
-    
-     <head>
-    <title>@yield('meta_title', 'International Company Formation: Global Business Setup Guide')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn how international company formation helps startups & businesses expand globally with offshore registration & expert guidance.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-
-
-    <!-- baki css / js -->
-</head>
-    
-    
-    <div class="max-w-screen-lg mx-auto">
+<div class="max-w-screen-lg mx-auto">
         <main class="mt-10">
 
             <div class="mb-4 md:mb-0 w-full mx-auto relative">

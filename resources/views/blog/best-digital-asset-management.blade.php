@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>Unlock Growth with the Best Digital Asset Management</title>
-    <meta name="description" content="Discover how the best digital asset management boosts productivity, secures files, and streamlines workflow for businesses of all sizes.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="Unlock Growth with the Best Digital Asset Management"
+    metaDescription="Discover how the best digital asset management boosts productivity, secures files, and streamlines workflow for businesses of all sizes."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

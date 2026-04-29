@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'What is Digital Assets Licensing? Unlock Its Hidden Power')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover what is digital assets licensing, its benefits, and how businesses can protect, manage, and monetise digital assets effectively.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'What is Digital Assets Licensing? Unlock Its Hidden Power')"
+    metaDescription="@yield('meta_description', 'Discover what is digital assets licensing, its benefits, and how businesses can protect, manage, and monetise digital assets effectively.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

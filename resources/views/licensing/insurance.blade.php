@@ -1,10 +1,9 @@
-<x-app-layout>
-    <head>
-            <title>@yield('meta_title', 'Insurance Licensing Services Simplified for Companies')</title>
-            <meta name="description" content="@yield('Simplified insurance licensing solutions worldwide, ensuring full regulatory compliance, efficient processes, and smooth operational setup for your business.')">
-            <link rel="canonical" href="@yield('canonical', url()->current())">
-        </head>
-    <main>
+<x-app-layout
+    title="@yield('meta_title', 'Insurance Licensing Services Simplified for Companies')"
+    metaDescription="@yield('Simplified insurance licensing solutions worldwide, ensuring full regulatory compliance, efficient processes, and smooth operational setup for your business.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<main>
         <div class="">
             <div class="bg-image relative isolate px-6 lg:px-8">
                 <div class="py-20 sm:py-40 lg:py-28">

@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>Smart Assets and Investment Management Strategies Revealed</title>
-    <meta name="description" content="Learn how Assets and Investment Management helps grow wealth, manage risks, and plan smart strategies for long-term financial success.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="Smart Assets and Investment Management Strategies Revealed"
+    metaDescription="Learn how Assets and Investment Management helps grow wealth, manage risks, and plan smart strategies for long-term financial success."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

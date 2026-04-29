@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'What is Banking Licensing? Key Facts for Beginners')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn what is banking licensing, why it matters, and how businesses can get approved. A simple guide for beginners and professionals alike.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'What is Banking Licensing? Key Facts for Beginners')"
+    metaDescription="@yield('meta_description', 'Learn what is banking licensing, why it matters, and how businesses can get approved. A simple guide for beginners and professionals alike.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

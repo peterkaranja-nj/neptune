@@ -1,84 +1,10 @@
 
 <x-app-layout
-    meta-description="Register trusts and foundations efficiently with Neptune Corporate's expert advisory and support services."
-    canonical="{{ url('/corporate/trust-and-foundation-registration') }}">
-    
-    <head>
-        <title>Trust and Foundation Registration Services | Neptune Fiduciaries</title>
-        
-        <!-- Schema JSON-LD for Trust and Foundation Registration Page -->
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@graph": [
-            {
-              "@type": "ProfessionalService",
-              "@id": "https://neptunecorporate.com/#organization",
-              "name": "Neptune Fiduciaries",
-              "url": "https://neptunecorporate.com/",
-              "logo": "https://neptunecorporate.com/images/neptune-3.png",
-              "image": "https://neptunecorporate.com/images/hero-3.jpg",
-              "description": "Corporate solutions including IBC, LLC, registered agent, nominee services & virtual offices for global entrepreneurs and investors.",
-              "telephone": "+254 721 441 544",
-              "email": "info@neptunecorporate.com",
-              "priceRange": "$$",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Delta Corner Annex, Ring Rd, Westlands",
-                "addressLocality": "Nairobi",
-                "postalCode": "00800",
-                "addressCountry": "KE"
-              },
-              "sameAs": [
-                "https://www.linkedin.com/company/neptune-fiduciaries-group/"
-              ]
-            },
-            {
-              "@type": "WebSite",
-              "@id": "https://neptunecorporate.com/#website",
-              "url": "https://neptunecorporate.com/",
-              "name": "Neptune Fiduciaries",
-              "publisher": {
-                "@id": "https://neptunecorporate.com/#organization"
-              }
-            },
-            {
-              "@type": "BreadcrumbList",
-              "@id": "https://neptunecorporate.com/corporate/trust-and-foundation-registration#breadcrumb",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": "https://neptunecorporate.com/"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": "Trust and Foundation Registration",
-                  "item": "https://neptunecorporate.com/corporate/trust-and-foundation-registration"
-                }
-              ]
-            },
-            {
-              "@type": "Service",
-              "@id": "https://neptunecorporate.com/corporate/trust-and-foundation-registration#service",
-              "name": "Trust and Foundation Registration",
-              "serviceType": "Fiduciary Services",
-              "description": "Efficient trust and foundation registration services with expert guidance to ensure legal compliance, secure structuring, and seamless setup processes.",
-              "provider": {
-                "@id": "https://neptunecorporate.com/#organization"
-              },
-              "areaServed": "Worldwide",
-              "image": "https://neptunecorporate.com/images/hero-3.jpg",
-              "url": "https://neptunecorporate.com/corporate/trust-and-foundation-registration"
-            }
-          ]
-        }
-        </script>
-    </head>
-    
-    <main>
+    title="Trust and Foundation Registration Services | Neptune Fiduciaries"
+    metaDescription="Neptune Fiduciaries offers expert offshore and corporate services."
+    canonical="{{ url()->current() }}"
+>
+<main>
         <div class="">
             <div class="bg-image relative isolate px-6 lg:px-8">
                 <div class="py-20 sm:py-40 lg:py-28">

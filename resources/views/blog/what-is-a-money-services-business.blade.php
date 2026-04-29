@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>What Is a Money Services Business? Your Ultimate Guide</title>
-    <meta name="description" content="Learn what is a money services business, its types, legal requirements, costs, and how to start with Neptune Corporate’s expert guidance.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="What Is a Money Services Business? Your Ultimate Guide"
+    metaDescription="Learn what is a money services business, its types, legal requirements, costs, and how to start with Neptune Corporate’s expert guidance."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

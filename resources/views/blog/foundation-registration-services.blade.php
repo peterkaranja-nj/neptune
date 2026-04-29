@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Foundation Registration Services: Protect Assets Easily')</title>
-    <meta name="description" content="@yield('meta_description', 'Secure your wealth and protect assets with expert Foundation Registration Services. Easy, legal, and tailored for families & businesses.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Foundation Registration Services: Protect Assets Easily')"
+    metaDescription="@yield('meta_description', 'Secure your wealth and protect assets with expert Foundation Registration Services. Easy, legal, and tailored for families & businesses.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

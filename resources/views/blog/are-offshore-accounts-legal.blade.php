@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>Are Offshore Accounts Legal? Discover the Truth Today</title>
-    <meta name="description" content="Learn if are offshore accounts legal. Discover how to open and manage them safely, comply with regulations, and protect your assets globally.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="Are Offshore Accounts Legal? Discover the Truth Today"
+    metaDescription="Learn if are offshore accounts legal. Discover how to open and manage them safely, comply with regulations, and protect your assets globally."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>Licenses Are Needed to Start a Business: Your Legal Guide</title>
-    <meta name="description" content="Learn which licenses are needed to start a business, avoid fines, and ensure compliance with this complete guide for entrepreneurs and startups today.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="Licenses Are Needed to Start a Business: Your Legal Guide"
+    metaDescription="Learn which licenses are needed to start a business, avoid fines, and ensure compliance with this complete guide for entrepreneurs and startups today."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

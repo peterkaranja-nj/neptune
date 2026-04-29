@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Benefits of International Licensing for Business Success')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn the key benefits of international licensing and how it helps businesses expand globally, boost revenue, and protect their intellectual property.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Benefits of International Licensing for Business Success')"
+    metaDescription="@yield('meta_description', 'Learn the key benefits of international licensing and how it helps businesses expand globally, boost revenue, and protect their intellectual property.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

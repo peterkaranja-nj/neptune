@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>How to Choose the Right Financial Institution in 2026</title>
-    <meta name="description" content="Learn how to choose the right financial institution for secure banking, lower costs, and global business growth with smart financial planning tips.">
-    <link rel="canonical" href="{{ url()->current() }}">
-</head>
-
+<x-app-layout
+    title="How to Choose the Right Financial Institution in 2026"
+    metaDescription="Learn how to choose the right financial institution for secure banking, lower costs, and global business growth with smart financial planning tips."
+    canonical="{{ url()->current() }}"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

@@ -1,11 +1,9 @@
-<x-app-layout>
-    <head>
-        <title>@yield('meta_title', 'Gaming and Gambling License Solutions for Your Enterprise')</title>
-        <meta name="description" content="@yield('meta_description', 'Comprehensive gaming and gambling licensing services, providing expert advice to establish legal, compliant, and fully operational entertainment businesses.')">
-        <link rel="canonical" href="@yield('canonical', url()->current())">
-    </head>
-
-    <main>
+<x-app-layout
+    title="@yield('meta_title', 'Gaming and Gambling License Solutions for Your Enterprise')"
+    metaDescription="@yield('meta_description', 'Comprehensive gaming and gambling licensing services, providing expert advice to establish legal, compliant, and fully operational entertainment businesses.')"
+    canonical="@yield('canonical', url()->current())"
+>
+<main>
         <div class="">
             <div class="bg-image relative isolate px-6 lg:px-8">
                 <div class="py-20 sm:py-40 lg:py-28">

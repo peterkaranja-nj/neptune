@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'Why Trust Corporate Services Are Essential for Your Business')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover how trust corporate services protect your business, ensure compliance, and simplify asset management for local and international growth.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'Why Trust Corporate Services Are Essential for Your Business')"
+    metaDescription="@yield('meta_description', 'Discover how trust corporate services protect your business, ensure compliance, and simplify asset management for local and international growth.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

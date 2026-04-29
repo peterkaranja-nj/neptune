@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'What is virtual office services? Boost Business Today')</title>
-    <meta name="description" content="@yield('meta_description', 'Discover what is virtual office services and how they help businesses save costs, stay professional, and operate remotely with ease.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'What is virtual office services? Boost Business Today')"
+    metaDescription="@yield('meta_description', 'Discover what is virtual office services and how they help businesses save costs, stay professional, and operate remotely with ease.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

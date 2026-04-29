@@ -1,11 +1,8 @@
-<x-app-layout>
-
-<head>
-    <title>@yield('meta_title', 'How to Open International Bank Accounts Like a Pro')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn how to open international bank accounts step by step. Discover requirements, documents, and expert help for secure global banking access.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'How to Open International Bank Accounts Like a Pro')"
+    metaDescription="@yield('meta_description', 'Learn how to open international bank accounts step by step. Discover requirements, documents, and expert help for secure global banking access.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">

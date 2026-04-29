@@ -1,11 +1,8 @@
-<x-app-layout>
-       
-<head>
-    <title>@yield('meta_title', 'International Business License: Global Growth Made Easy')</title>
-    <meta name="description" content="@yield('meta_description', 'Learn how an International Business License helps your business expand globally, stay compliant, and access new markets easily.')">
-    <link rel="canonical" href="@yield('canonical', url()->current())">
-</head>
-
+<x-app-layout
+    title="@yield('meta_title', 'International Business License: Global Growth Made Easy')"
+    metaDescription="@yield('meta_description', 'Learn how an International Business License helps your business expand globally, stay compliant, and access new markets easily.')"
+    canonical="@yield('canonical', url()->current())"
+>
 <div class="max-w-screen-lg mx-auto">
 
     <main class="mt-10">
