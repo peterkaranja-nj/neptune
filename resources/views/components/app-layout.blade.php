@@ -139,7 +139,15 @@
     <script>
         window.addEventListener('load', function() {
             document.getElementById('preloader').style.display = 'none';
-            document.getElementById('loaded').style.display = 'block';
+            const loaded = document.getElementById('loaded');
+            loaded.style.opacity = '0';
+            loaded.style.display = 'block';
+            loaded.style.transition = 'opacity 0.55s ease';
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    loaded.style.opacity = '1';
+                });
+            });
         });
     </script>
 </body>

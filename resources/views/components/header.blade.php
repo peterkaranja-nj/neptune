@@ -1,4 +1,4 @@
-<header class="bg-white">
+<header class="bg-white sticky top-0 z-50 shadow-sm">
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
             <a href="#" class="-m-1.5 p-1.5">
@@ -14,87 +14,110 @@
                 </svg>
             </button>
         </div>
-        <div class="hidden lg:flex lg:gap-x-6 lg:justify-end">
-            <a href="/" class="text-xs font-semibold leading-6 text-gray-900">Home</a>
-            <a href="/about" class="text-xs font-semibold leading-6 text-gray-900">About Us</a>
+        <div class="hidden lg:flex lg:gap-x-6 lg:justify-end lg:items-center">
+            <a href="/" class="text-xs font-semibold leading-6 text-gray-900 hover:text-yellow-600 transition-colors duration-200">Home</a>
+            <a href="/about" class="text-xs font-semibold leading-6 text-gray-900 hover:text-yellow-600 transition-colors duration-200">About Us</a>
 
+            <!-- Offshore Company Registration -->
             <div class="relative" id="corporate-wrapper">
-                <button type="button" class="flex items-center gap-x-1 text-xs font-semibold leading-6 text-gray-900" aria-expanded="false">
+                <button type="button" class="flex items-center gap-x-1 text-xs font-semibold leading-6 text-gray-900 hover:text-yellow-600 transition-colors duration-200" aria-expanded="false">
                     Offshore Company Registration
                     <svg class="h-3 w-3 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                     </svg>
                 </button>
-                <div id="corporateMenu" class="hidden absolute -left-8 top-full z-10 w-screen max-w-sm overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
-                    <div class="p-2 border-t border-yellow-600">
-                        <div class="group relative flex items-center gap-x-4 px-2 rounded-lg text-xs font-bold leading-6">
-                            <div class="flex flex-col">
-                                <a href="{{ route('corporate.ibc-formation') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">IBC Formation</a>
-                                <a href="{{ route('corporate.registered-agent-services') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Registered Agent Services</a>
-                                <a href="{{ route('corporate.trust-and-foundation-registration') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Trust and Foundation Registration</a>
-                                <a href="{{ route('corporate.nominee-director-and-shareholder-access') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Nominee Director and Shareholder Access</a>
-                                <a href="{{ route('corporate.bank-account-opening') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Bank Account Opening</a>
-                                <a href="{{ route('corporate.accounting-and-auditing') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Accounting and Auditing Services</a>
-                                <a href="{{ route('corporate.legal-opinions-of-distiction') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Legal Opinions of Distinctions</a>
-                            </div>
+                <div id="corporateMenu" class="dropdown-panel hidden absolute -left-8 top-full mt-2 z-10 w-72 rounded-2xl bg-white shadow-xl ring-1 ring-gray-900/5 overflow-hidden">
+                    <div class="p-4">
+                        <div class="border-b border-yellow-500 mb-3"></div>
+                        <div class="flex flex-col gap-0.5">
+                            <a href="{{ route('corporate.ibc-formation') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>IBC Formation</a>
+                            <a href="{{ route('corporate.registered-agent-services') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Registered Agent Services</a>
+                            <a href="{{ route('corporate.trust-and-foundation-registration') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Trust and Foundation Registration</a>
+                            <a href="{{ route('corporate.nominee-director-and-shareholder-access') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Nominee Director and Shareholder Access</a>
+                            <a href="{{ route('corporate.bank-account-opening') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Bank Account Opening</a>
+                            <a href="{{ route('corporate.accounting-and-auditing') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Accounting and Auditing Services</a>
+                            <a href="{{ route('corporate.legal-opinions-of-distiction') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Legal Opinions of Distinctions</a>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Global Licensing -->
             <div class="relative" id="licensing-wrapper">
-                <button type="button" class="flex items-center gap-x-1 text-xs font-semibold leading-6 text-gray-900" aria-expanded="false">
+                <button type="button" class="flex items-center gap-x-1 text-xs font-semibold leading-6 text-gray-900 hover:text-yellow-600 transition-colors duration-200" aria-expanded="false">
                     Global Licensing
                     <svg class="h-3 w-3 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                     </svg>
                 </button>
-                <div id="licensingMenu" class="hidden absolute -left-8 top-full z-10 w-screen max-w-sm overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
-                    <div class="p-2 border-t border-yellow-600">
-                        <div class="group relative flex items-center gap-x-4 px-2 rounded-lg text-xs font-bold leading-6">
-                            <div class="flex flex-col">
-                                <a href="{{ route('licensing.brokerage-forex') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Brokerage/Forex</a>
-                                <a href="{{ route('licensing.gaming-and-gambling') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Gambling & Gaming</a>
-                                <a href="{{ route('licensing.insurance') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Insurance</a>
-                                <a href="{{ route('licensing.banking') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Banking</a>
-                                <a href="{{ route('licensing.digital-assets') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Cryptocurrencies and Digital Assets</a>
-                            </div>
+                <div id="licensingMenu" class="dropdown-panel hidden absolute -left-8 top-full mt-2 z-10 w-72 rounded-2xl bg-white shadow-xl ring-1 ring-gray-900/5 overflow-hidden">
+                    <div class="p-4">
+                        <div class="border-b border-yellow-500 mb-3"></div>
+                        <div class="flex flex-col gap-0.5">
+                            <a href="{{ route('licensing.brokerage-forex') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Brokerage/Forex</a>
+                            <a href="{{ route('licensing.gaming-and-gambling') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Gambling & Gaming</a>
+                            <a href="{{ route('licensing.insurance') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Insurance</a>
+                            <a href="{{ route('licensing.banking') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Banking</a>
+                            <a href="{{ route('licensing.digital-assets') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Cryptocurrencies and Digital Assets</a>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Other Services -->
             <div class="relative" id="services-wrapper">
-                <button type="button" class="flex items-center gap-x-1 text-xs font-semibold leading-6 text-gray-900" aria-expanded="false">
+                <button type="button" class="flex items-center gap-x-1 text-xs font-semibold leading-6 text-gray-900 hover:text-yellow-600 transition-colors duration-200" aria-expanded="false">
                     Other Services
                     <svg class="h-3 w-3 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                     </svg>
                 </button>
-                <div id="servicesMenu" class="hidden absolute -left-8 top-full z-10 w-screen max-w-sm overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
-                    <div class="p-2 border-t border-yellow-600">
-                        <div class="group relative flex items-center gap-x-4 px-2 rounded-lg text-xs font-bold leading-6">
-                            <div class="flex flex-col">
-                                <a href="{{ route('other-services.aircraft-and-shipping-registration') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Aircraft and Shipping Registration</a>
-                                <a href="{{ route('other-services.assets-and-investments-advisory') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Assets And Investment Advisory</a>
-                                <a href="{{ route('other-services.credit-and-bond-institutions') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Credit and Bond Institutions</a>
-                                <a href="{{ route('other-services.data-reporting') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Data Reporting</a>
-                                <a href="{{ route('other-services.electronic-and-money-services-business') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Electronic and Money Services Businesses</a>
-                                <a href="{{ route('other-services.investment-funds') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Investments and Funds</a>
-                                <a href="{{ route('other-services.limited-liability-companies') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Limited Liability Companies</a>
-                                <a href="{{ route('other-services.pension-services') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Pension Services</a>
-                                <a href="{{ route('other-services.trademark-registration') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Trademark Registration</a>
-                                <a href="{{ route('other-services.trust-services') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Trust Services</a>
-                                <a href="{{ route('other-services.virtual-office-services') }}" class="text-gray-800 hover:text-white hover:bg-yellow-600 rounded-full px-1">Virtual Office Services</a>
-                            </div>
+                <div id="servicesMenu" class="dropdown-panel hidden absolute -left-8 top-full mt-2 z-10 w-72 rounded-2xl bg-white shadow-xl ring-1 ring-gray-900/5 overflow-hidden">
+                    <div class="p-4">
+                        <div class="border-b border-yellow-500 mb-3"></div>
+                        <div class="flex flex-col gap-0.5 max-h-72 overflow-y-auto pr-1">
+                            <a href="{{ route('other-services.aircraft-and-shipping-registration') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Aircraft and Shipping Registration</a>
+                            <a href="{{ route('other-services.assets-and-investments-advisory') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Assets And Investment Advisory</a>
+                            <a href="{{ route('other-services.credit-and-bond-institutions') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Credit and Bond Institutions</a>
+                            <a href="{{ route('other-services.data-reporting') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Data Reporting</a>
+                            <a href="{{ route('other-services.electronic-and-money-services-business') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Electronic and Money Services Businesses</a>
+                            <a href="{{ route('other-services.investment-funds') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Investments and Funds</a>
+                            <a href="{{ route('other-services.limited-liability-companies') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Limited Liability Companies</a>
+                            <a href="{{ route('other-services.pension-services') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Pension Services</a>
+                            <a href="{{ route('other-services.trademark-registration') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Trademark Registration</a>
+                            <a href="{{ route('other-services.trust-services') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Trust Services</a>
+                            <a href="{{ route('other-services.virtual-office-services') }}" class="flex items-center gap-2.5 text-xs text-gray-700 font-medium px-3 py-2 rounded-lg hover:bg-yellow-50 hover:text-yellow-700 transition-all duration-150">
+                                <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>Virtual Office Services</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <a href="/jurisdictions" class="text-xs font-semibold leading-6 text-gray-900">Jurisdictions</a>
-            <a href="/blog" class="text-xs font-semibold leading-6 text-gray-900">Blog</a>
-            <a href="/contact" class="text-xs bg-yellow-600 px-2 font-semibold rounded-md leading-6 text-white">Contact Us</a>
+            <a href="/jurisdictions" class="text-xs font-semibold leading-6 text-gray-900 hover:text-yellow-600 transition-colors duration-200">Jurisdictions</a>
+            <a href="/blog" class="text-xs font-semibold leading-6 text-gray-900 hover:text-yellow-600 transition-colors duration-200">Blog</a>
+            <a href="/contact" class="text-xs bg-yellow-600 hover:bg-yellow-700 px-4 py-2 font-semibold rounded-lg text-white transition-colors duration-200 shadow-sm hover:shadow-md">Contact Us</a>
         </div>
     </nav>
 
@@ -187,17 +210,54 @@
         font-size: 15px !important;
         line-height: 1.6 !important;
     }
+
+    @keyframes dropdownIn {
+        from { opacity: 0; transform: translateY(-8px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes dropdownOut {
+        from { opacity: 1; transform: translateY(0); }
+        to   { opacity: 0; transform: translateY(-8px); }
+    }
+
+    .dropdown-opening {
+        animation: dropdownIn 0.18s ease forwards;
+    }
+
+    .dropdown-closing {
+        animation: dropdownOut 0.15s ease forwards;
+    }
 </style>
 
 <script>
-    // -------------------------------------------------------
-    // DESKTOP HOVER DROPDOWNS — with delay to allow clicking
-    // -------------------------------------------------------
     const menuConfig = [
         { wrapperId: 'corporate-wrapper', menuId: 'corporateMenu' },
         { wrapperId: 'licensing-wrapper', menuId: 'licensingMenu' },
         { wrapperId: 'services-wrapper',  menuId: 'servicesMenu'  },
     ];
+
+    function openDropdown(menu) {
+        menuConfig.forEach(cfg => {
+            const m = document.getElementById(cfg.menuId);
+            if (m !== menu && !m.classList.contains('hidden')) {
+                closeDropdown(m);
+            }
+        });
+        menu.classList.remove('hidden', 'dropdown-closing');
+        void menu.offsetWidth;
+        menu.classList.add('dropdown-opening');
+    }
+
+    function closeDropdown(menu) {
+        if (menu.classList.contains('hidden')) return;
+        menu.classList.remove('dropdown-opening');
+        menu.classList.add('dropdown-closing');
+        setTimeout(() => {
+            menu.classList.add('hidden');
+            menu.classList.remove('dropdown-closing');
+        }, 150);
+    }
 
     document.addEventListener('DOMContentLoaded', function () {
         menuConfig.forEach(function ({ wrapperId, menuId }) {
@@ -207,55 +267,34 @@
 
             let closeTimer = null;
 
-            // Open on hover — cancel any pending close
             wrapper.addEventListener('mouseenter', function () {
                 clearTimeout(closeTimer);
-
-                // Close all OTHER menus immediately
-                menuConfig.forEach(function (other) {
-                    if (other.menuId !== menuId) {
-                        document.getElementById(other.menuId).classList.add('hidden');
-                    }
-                });
-
-                menu.classList.remove('hidden');
+                openDropdown(menu);
             });
 
-            // When mouse leaves the wrapper — wait 150ms before closing
-            // This gives the user time to move into the dropdown
             wrapper.addEventListener('mouseleave', function () {
-                closeTimer = setTimeout(function () {
-                    menu.classList.add('hidden');
-                }, 150);
+                closeTimer = setTimeout(function () { closeDropdown(menu); }, 150);
             });
 
-            // If mouse enters the menu itself — cancel the close timer
             menu.addEventListener('mouseenter', function () {
                 clearTimeout(closeTimer);
             });
 
-            // When mouse leaves the menu — close with same delay
             menu.addEventListener('mouseleave', function () {
-                closeTimer = setTimeout(function () {
-                    menu.classList.add('hidden');
-                }, 150);
+                closeTimer = setTimeout(function () { closeDropdown(menu); }, 150);
             });
         });
 
-        // Close all dropdowns when clicking outside
         document.addEventListener('click', function (e) {
             menuConfig.forEach(function ({ wrapperId, menuId }) {
                 const wrapper = document.getElementById(wrapperId);
                 if (wrapper && !wrapper.contains(e.target)) {
-                    document.getElementById(menuId).classList.add('hidden');
+                    closeDropdown(document.getElementById(menuId));
                 }
             });
         });
     });
 
-    // -------------------------------------------------------
-    // MOBILE MENU FUNCTIONS
-    // -------------------------------------------------------
     function toggleSubMenu(menuId) {
         var menu = document.getElementById(menuId);
         var isVisible = menu.style.display === 'block';

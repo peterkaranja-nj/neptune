@@ -5,29 +5,36 @@
 >
 
     <main>
+        <!-- Hero Section with crossfade background -->
         <div class="">
-            <div class="bg-image relative isolate px-6 pt-4 lg:px-8">
-                <div class="max-w-2xl py-32 sm:py-48 lg:py-40">
-                    <div class="hidden sm:mb-8 sm:flex sm:justify-left">
-                        <div class="relative rounded-full px-3 py-1 text-xs leading-6 bg-white text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                            Elevate your financial horizon with us.
-                            <a href="/about">
-                                <span class="text-white bg-yellow-600 cursor-pointer rounded-lg px-2 py-0.5">
-                                    Read more
-                                </span>
-                            </a>
+            <div class="relative isolate px-6 pt-4 lg:px-8" id="hero-section">
+                <!-- Background layers for smooth crossfade -->
+                <div id="bg-layer-1" class="absolute inset-0" style="background-image:url('images/bg-neptune.jpg');background-size:cover;background-position:center;transition:opacity 0.9s ease;"></div>
+                <div id="bg-layer-2" class="absolute inset-0" style="background-image:url('images/bg-neptune2.jpg');background-size:cover;background-position:center;opacity:0;transition:opacity 0.9s ease;"></div>
+                <!-- Content sits above background layers -->
+                <div class="relative z-10">
+                    <div class="max-w-2xl py-32 sm:py-48 lg:py-40">
+                        <div class="hidden sm:mb-8 sm:flex sm:justify-left">
+                            <div class="relative rounded-full px-3 py-1 text-xs leading-6 bg-white text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                                Elevate your financial horizon with us.
+                                <a href="/about">
+                                    <span class="text-white bg-yellow-600 hover:bg-yellow-700 cursor-pointer rounded-lg px-4 py-1.5 font-medium inline-block transition-colors duration-200">
+                                        Read more
+                                    </span>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="text-left">
-                        <h1 id="slider-text" class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                            Grow your <span class="text-yellow-600">wealth</span> with a
-                            trusted advisor
-                        </h1>
-                        <p class="mt-6 text-sm text-white">
-                            Neptune Fiduciaries offers expert financial advisory and offshore management solutions
-                            tailored to your unique needs. We navigate the complexities of wealth management, ensuring
-                            your financial voyage is smooth sailing.
-                        </p>
+                        <div class="text-left">
+                            <h1 id="slider-text" class="text-4xl font-bold tracking-tight text-white sm:text-6xl" style="transition:opacity 0.35s ease;">
+                                Grow your <span class="text-yellow-600">wealth</span> with a
+                                trusted advisor
+                            </h1>
+                            <p class="mt-6 text-sm text-white">
+                                Neptune Fiduciaries offers expert financial advisory and offshore management solutions
+                                tailored to your unique needs. We navigate the complexities of wealth management, ensuring
+                                your financial voyage is smooth sailing.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -138,7 +145,8 @@
             </div>
         </div>
 
-        <section class="bg-gray-50 py-16">
+        <!-- Why Choose Us with scroll-triggered counters -->
+        <section id="why-choose-us" class="bg-gray-50 py-16">
             <div class="mx-auto max-w-7xl px-6 py-10">
                 <h2 class="text-2xl font-bold tracking-tight text-center text-purple-800 sm:text-4xl sm:text-left md:leading-tight">
                     Why Choose <span class="text-yellow-600">Us</span>
@@ -156,7 +164,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                             </svg>
                         </div>
-                        <span class="text-3xl font-bold text-gray-900 mb-1">28+</span>
+                        <span class="text-3xl font-bold text-gray-900 mb-1 stat-counter" data-target="28" data-suffix="+">28+</span>
                         <p class="text-xs text-gray-500">Employees and legal experts</p>
                     </div>
 
@@ -166,7 +174,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
                             </svg>
                         </div>
-                        <span class="text-3xl font-bold text-gray-900 mb-1">3</span>
+                        <span class="text-3xl font-bold text-gray-900 mb-1 stat-counter" data-target="3">3</span>
                         <p class="text-xs text-gray-500">Offices around the world</p>
                     </div>
 
@@ -176,7 +184,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
                             </svg>
                         </div>
-                        <span class="text-3xl font-bold text-gray-900 mb-1">29</span>
+                        <span class="text-3xl font-bold text-gray-900 mb-1 stat-counter" data-target="29">29</span>
                         <p class="text-xs text-gray-500">Companies incorporated</p>
                     </div>
 
@@ -186,7 +194,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 10.991h1.999v5.021H7V10.99zm4.5 0h2v5.021h-2V10.99zm4.5 0h2v5.021h-2V10.99z" />
                             </svg>
                         </div>
-                        <span class="text-3xl font-bold text-gray-900 mb-1">150+</span>
+                        <span class="text-3xl font-bold text-gray-900 mb-1 stat-counter" data-target="150" data-suffix="+">150+</span>
                         <p class="text-xs text-gray-500">Banks connected to our software</p>
                     </div>
 
@@ -206,7 +214,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6s2-2 2-4M12 6s2 2 2 4m-8 2c0 2.76 2.24 5 5 5s5-2.24 5-5-2.24-5-5-5-5 2.24-5 5z" />
                             </svg>
                         </div>
-                        <span class="text-3xl font-bold text-gray-900 mb-1">30+</span>
+                        <span class="text-3xl font-bold text-gray-900 mb-1 stat-counter" data-target="30" data-suffix="+">30+</span>
                         <p class="text-xs text-gray-500">Jurisdictions incorporated in</p>
                     </div>
 
@@ -242,9 +250,6 @@
             </div>
         </section>
 
-       
-        {{-- TRANSFORM SECTION — FIXED: balanced gap        --}}
-      
         <div class="max-w-7xl mx-auto px-6 lg:px-8 py-12">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div>
@@ -271,36 +276,85 @@
 </x-app-layout>
 
 <script>
-    let images = [
-        {
-            src: "images/bg-neptune.jpg",
-            text: "Grow your <span class='text-yellow-600'>wealth</span> with a trusted advisor"
-        },
-        {
-            src: "images/bg-neptune2.jpg",
-            text: "Navigate the <span class='text-yellow-600'>complexities</span> of wealth management"
-        }
+    // ── Hero crossfade ──────────────────────────────────────────
+    const heroImages = [
+        { src: "images/bg-neptune.jpg",  text: "Grow your <span class='text-yellow-600'>wealth</span> with a trusted advisor" },
+        { src: "images/bg-neptune2.jpg", text: "Navigate the <span class='text-yellow-600'>complexities</span> of wealth management" }
     ];
 
     let currentImageIndex = 0;
-    let sliderText = document.getElementById("slider-text");
+    let activeLayer = 1;
 
     function changeImageAndText() {
-        currentImageIndex = (currentImageIndex + 1) % images.length;
-        sliderText.innerHTML = images[currentImageIndex].text;
-        document.querySelector('.bg-image').style.backgroundImage = `url(${images[currentImageIndex].src})`;
+        const layer1  = document.getElementById('bg-layer-1');
+        const layer2  = document.getElementById('bg-layer-2');
+        const textEl  = document.getElementById('slider-text');
+
+        currentImageIndex = (currentImageIndex + 1) % heroImages.length;
+
+        // Fade out heading text
+        textEl.style.opacity = '0';
+
+        // Crossfade background layers
+        if (activeLayer === 1) {
+            layer2.style.backgroundImage = `url(${heroImages[currentImageIndex].src})`;
+            setTimeout(() => { layer2.style.opacity = '1'; layer1.style.opacity = '0'; }, 80);
+            activeLayer = 2;
+        } else {
+            layer1.style.backgroundImage = `url(${heroImages[currentImageIndex].src})`;
+            setTimeout(() => { layer1.style.opacity = '1'; layer2.style.opacity = '0'; }, 80);
+            activeLayer = 1;
+        }
+
+        // Fade in new text after crossfade begins
+        setTimeout(() => {
+            textEl.innerHTML = heroImages[currentImageIndex].text;
+            textEl.style.opacity = '1';
+        }, 500);
     }
 
     setInterval(changeImageAndText, 5000);
+
+    // ── Why Choose Us scroll-triggered counters ─────────────────
+    function animateCountUp(el, target, suffix) {
+        const duration = 1500;
+        const steps    = Math.ceil(duration / 16);
+        const stepSize = target / steps;
+        let current    = 0;
+        let frame      = 0;
+
+        const timer = setInterval(() => {
+            frame++;
+            current = Math.min(stepSize * frame, target);
+            el.textContent = Math.floor(current) + suffix;
+            if (frame >= steps) {
+                el.textContent = target + suffix;
+                clearInterval(timer);
+            }
+        }, 16);
+    }
+
+    const whySection   = document.getElementById('why-choose-us');
+    let   whyAnimated  = false;
+
+    if (whySection) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !whyAnimated) {
+                    whyAnimated = true;
+                    whySection.querySelectorAll('.stat-counter').forEach(el => {
+                        animateCountUp(el, parseInt(el.dataset.target), el.dataset.suffix || '');
+                    });
+                    observer.unobserve(whySection);
+                }
+            });
+        }, { threshold: 0.25 });
+
+        observer.observe(whySection);
+    }
 </script>
 
 <style scoped>
-    .bg-image {
-        background-image: url("images/bg-neptune.jpg");
-        background-size: cover;
-        background-position: center;
-    }
-
     .bg-color {
         background-color: #D69e2e;
     }
