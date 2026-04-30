@@ -43,7 +43,7 @@ RUN echo '<VirtualHost *:80>\n\
 RUN a2enmod rewrite
 
 # Runtime start script - artisan runs HERE where env vars from Render are available
-RUN printf '#!/bin/bash\nset -e\nphp artisan package:discover --ansi\nphp artisan config:cache\nphp artisan route:cache\nphp artisan view:cache\napache2-foreground' > /start.sh && chmod +x /start.sh
+RUN printf '#!/bin/bash\nset -e\nmkdir -p storage/framework/views storage/framework/cache/data storage/framework/sessions storage/logs bootstrap/cache\nchown -R www-data:www-data storage bootstrap/cache\nphp artisan package:discover --ansi\nphp artisan config:cache\nphp artisan route:cache\nphp artisan view:cache\napache2-foreground' > /start.sh && chmod +x /start.sh
 
 EXPOSE 80
 
