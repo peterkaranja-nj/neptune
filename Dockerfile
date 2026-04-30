@@ -11,23 +11,30 @@ WORKDIR /var/www/html
 
 COPY . .
 
-# Create .env before composer
+# Create .env before anything
 RUN cp .env.example .env
 
-# Install composer dependencies but skip scripts (avoids package:discover error)
-RUN composer install --no-dev --optimize-autoloader --no-scripts
+# Install composer - no scripts, no artisan calls during build
+RUN composer install --no-dev --optimize-autoloader --no-scripts --no-interaction
 
-# Now generate key (vendor exists now)
-RUN php artisan key:generate
+# Dump autoload without running scripts
+RUN composer dump-autoload --no-scripts
 
-#  Now run package discover manually with APP_BASE_PATH set
-RUN php artisan package:discover --ansi
+# Generate key using sed instead of artisan (avoids Laravel boot issues)
+RUN php -r "
+\$key = 'base64:'.base64_encode(random_bytes(32));
+\$env = file_get_contents('/var/www/html/.env');
+\$env = preg_replace('/^APP_KEY=.*$/m', 'APP_KEY='.\$key, \$env);
+file_put_contents('/var/www/html/.env', \$env);
+echo 'Key generated: '.\$key.\"\n\";
+"
 
-# Build frontend assets
+# Build frontend
 RUN npm install && npm run build
 
 # Permissions
 RUN chown -R www-data:www-data storage bootstrap/cache
+RUN chmod -R 775 storage bootstrap/cache
 
 # Apache config
 RUN echo '<VirtualHost *:80>\n\
@@ -40,7 +47,8 @@ RUN echo '<VirtualHost *:80>\n\
 
 RUN a2enmod rewrite
 
-RUN printf '#!/bin/bash\nphp artisan key:generate --force\nphp artisan config:cache\nphp artisan route:cache\nphp artisan view:cache\napache2-foreground' > /start.sh && chmod +x /start.sh
+# Runtime start script - artisan runs HERE where env vars from Render are available
+RUN printf '#!/bin/bash\nset -e\nphp artisan package:discover --ansi\nphp artisan config:cache\nphp artisan route:cache\nphp artisan view:cache\napache2-foreground' > /start.sh && chmod +x /start.sh
 
 EXPOSE 80
 
