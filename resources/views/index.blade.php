@@ -122,7 +122,7 @@
                 <h2 class="text-2xl font-bold tracking-tight text-center text-purple-800 sm:text-4xl sm:text-left">
                     Our <span class="text-yellow-600">Focus</span>
                 </h2>
-                <p class="mb-5 text-base text-center text-gray-600 sm:text-left text-xs">
+                <p class="mt-4 mb-5 text-base text-center text-gray-600 sm:text-left text-xs">
                     We focus on delivering business solutions to diverse clientele ranging from Multinational
                     Corporates, HNWIs, Fund Operators, Professional Firms and Private Clients.
                 </p>
