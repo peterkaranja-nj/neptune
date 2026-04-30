@@ -16,11 +16,14 @@ WORKDIR /var/www/html
 # Copy project files
 COPY . .
 
-# Create a temporary .env so Laravel can boot during build
-RUN cp .env.example .env && php artisan key:generate
+# Step 1: Create .env FIRST (before composer, before artisan)
+RUN cp .env.example .env
 
-# Install PHP dependencies
+# Step 2: Install PHP dependencies (vendor/ folder is created here)
 RUN composer install --no-dev --optimize-autoloader
+
+# Step 3: NOW artisan works because vendor/ exists
+RUN php artisan key:generate
 
 # Install Node dependencies and build assets
 RUN npm install && npm run build
