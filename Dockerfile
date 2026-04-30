@@ -21,13 +21,8 @@ RUN composer install --no-dev --optimize-autoloader --no-scripts --no-interactio
 RUN composer dump-autoload --no-scripts
 
 # Generate key using sed instead of artisan (avoids Laravel boot issues)
-RUN php -r "
-\$key = 'base64:'.base64_encode(random_bytes(32));
-\$env = file_get_contents('/var/www/html/.env');
-\$env = preg_replace('/^APP_KEY=.*$/m', 'APP_KEY='.\$key, \$env);
-file_put_contents('/var/www/html/.env', \$env);
-echo 'Key generated: '.\$key.\"\n\";
-"
+# Generate key without using artisan
+RUN php -r "file_put_contents('.env', preg_replace('/^APP_KEY=.*$/m', 'APP_KEY=base64:'.base64_encode(random_bytes(32)), file_get_contents('.env')));"
 
 # Build frontend
 RUN npm install && npm run build
