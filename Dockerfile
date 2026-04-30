@@ -16,6 +16,9 @@ WORKDIR /var/www/html
 # Copy project files
 COPY . .
 
+# Create a temporary .env so Laravel can boot during build
+RUN cp .env.example .env && php artisan key:generate
+
 # Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader
 
@@ -36,9 +39,8 @@ RUN echo '<VirtualHost *:80>\n\
 
 RUN a2enmod rewrite
 
-# Create start script that runs artisan commands at runtime
-# (after env vars are injected by Render)
-RUN printf '#!/bin/bash\nphp artisan config:cache\nphp artisan route:cache\nphp artisan view:cache\napache2-foreground' > /start.sh && chmod +x /start.sh
+# Start script — runs at runtime after Render injects real env vars
+RUN printf '#!/bin/bash\nphp artisan key:generate --force\nphp artisan config:cache\nphp artisan route:cache\nphp artisan view:cache\napache2-foreground' > /start.sh && chmod +x /start.sh
 
 EXPOSE 80
 
